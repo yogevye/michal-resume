@@ -1,0 +1,43 @@
+.Intro {
+    padding-top: 10%;
+    display: flex;
+    flex-direction: row;
+    font-family: "Lora";
+}
+
+.logo-container {
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 27px;
+}
+
+.main-logo{
+    height: 11em;
+}
+
+.description-container{
+    max-width: 645px;
+}
+
+.new-line{
+    white-space: pre-line;
+}
+
+.name-headline{
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.middle-head-line{
+    font-weight: bolder;
+    font-size: 50px;
+}
+
+.description-test{
+    padding-top: 23px;
+    font-weight: lighter;
+    font-family: "titillium web";
+    font-size: 25px;
+    line-height: 18px;
+
+}

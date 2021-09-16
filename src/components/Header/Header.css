@@ -1,0 +1,10 @@
+.Header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Navbar-content{
+    min-width: 35%;
+}
