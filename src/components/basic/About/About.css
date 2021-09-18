@@ -1,0 +1,36 @@
+.about-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 5%;
+}
+
+.About {
+    display: flex;
+    flex-flow: row wrap;
+    width: 1200px;
+    font-family: "Lora";
+}
+
+.about-text-wrap {
+    margin-left: 58px;
+    min-height: 524px;
+}
+
+.profile-pic{
+    width: 418px;
+    max-height: 496px;
+    border-radius: 5px;
+}
+
+.about-headline{
+    font-weight: bolder;
+    font-size: 50px;
+}
+
+.about-paragraph{
+    line-height: 18px;
+    font-family: "titillium web";
+    font-size: 25px;
+    font-weight: lighter;
+}

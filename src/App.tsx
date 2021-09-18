@@ -13,6 +13,26 @@ import starlightLogo from  './images/projects-logos/starlight-logo.svg'
 
 // import Tail from "./components/Tail/Tail";
 
+const BASIC_LINKS = [
+    {
+        title: 'HOME',
+        link: '/',
+    },
+    {
+        title: 'ABOUT',
+        link: '/about',
+    },
+    {
+        title: 'RESUME',
+        link: '/',
+    },
+    {
+        title: 'CONTACT',
+        link: '/',
+    }
+];
+
+
 const PROJECTS_LINKS = [
     {
         name: 'airtool',
@@ -25,7 +45,7 @@ const PROJECTS_LINKS = [
     },{
         name: 'Startlight',
         link: '/Startlight',
-        logo: JugLogo,
+        logo: starlightLogo,
         redesignText: 'REDESIGN / COMPLEX / DESKTOP / UX / UI',
         headLine: 'Startlight',
         description: `A geospatial web system for \n
@@ -41,7 +61,7 @@ const PROJECTS_LINKS = [
     },{
         name: 'jug',
         link: '/jug',
-        logo: starlightLogo,
+        logo: JugLogo,
         redesignText: 'IDEATION / DESKTOP / UX / UI',
         headLine: 'Jug',
         description: `A web app for organizing and viewing \n
@@ -80,7 +100,7 @@ function App() {
   return (
       <div className="App">
           <Router>
-              <Header selectedNavbarLink = {selectedNavbarLink} currentLinkName={currentLinkName}/>
+              <Header selectedNavbarLink = {selectedNavbarLink} currentLinkName={currentLinkName} basicLinks={BASIC_LINKS}/>
               <Body projectsLinks={PROJECTS_LINKS}/>
               {/*<Tail/>*/}
           </Router>

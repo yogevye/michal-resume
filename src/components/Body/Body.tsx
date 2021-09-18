@@ -6,6 +6,7 @@ import Startlight from "../projects/Startlight/Startlight";
 import Kabuli from "../projects/Kabuli/Kabuli";
 import Jug from "../projects/Jug/Jug";
 import Home from "../basic/home-container/Home/Home";
+import About from "../basic/About/About";
 
 // @ts-ignore
 const Body = ({projectsLinks}) => (
@@ -22,6 +23,9 @@ const Body = ({projectsLinks}) => (
           </Route>
           <Route path="/jug">
               <Jug />
+          </Route>
+          <Route path="/about">
+              <About />
           </Route>
           <Route path="/">
               <Home projectsLinks={projectsLinks}/>

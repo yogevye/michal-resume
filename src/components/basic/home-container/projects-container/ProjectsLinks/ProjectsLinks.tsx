@@ -7,9 +7,6 @@ import ProjectsItems from "../ProjectsItems/Projects-items";
 const ProjectsLinks = ({projectsLinks}) => (
   <div className="ProjectsLinks">
     <div className="projects-logo">
-        {/*<h2>*/}
-        {/*    --- FEATURES PROJECTS*/}
-        {/*</h2>*/}
         <img src={logo} alt="projects link logo" className="projects-links-logo"/>
     </div>
       <ProjectsItems projectsLinks={projectsLinks}/>

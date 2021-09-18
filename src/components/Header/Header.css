@@ -1,8 +1,15 @@
+.header-warp {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 .Header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    width: 1200px;
 }
 
 .Navbar-content{
