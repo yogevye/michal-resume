@@ -1,5 +1,5 @@
 <svg width="735" height="435" viewBox="0 0 735 435" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<path d="M0 14C0 6.268 6.26801 0 14 0H735V435H14C6.26801 435 0 428.732 0 421V14Z" fill="#F69193"/>
+<rect width="735" height="435" fill="#F69193"/>
 <rect x="406" width="329" height="298" fill="url(#pattern0)"/>
 <rect y="66" width="385" height="369" fill="url(#pattern1)"/>
 <defs>
