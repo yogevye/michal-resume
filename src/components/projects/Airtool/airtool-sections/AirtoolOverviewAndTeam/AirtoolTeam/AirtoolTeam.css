@@ -1,0 +1,16 @@
+.AirtoolTeam {
+    display: flex;
+    flex-direction: column;
+}
+
+.airtool-team-title{
+    font-size: 25px;
+    color: #878787;
+    font-weight: normal;
+}
+
+.team-bullet-points{
+    color: #3F3939;
+    font-size: 25px;
+    list-style-type: square;
+}

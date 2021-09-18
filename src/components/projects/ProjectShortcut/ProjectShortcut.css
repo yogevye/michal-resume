@@ -1,0 +1,25 @@
+.ProjectShortcutWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.ProjectShortcut{
+    display: flex;
+    flex-direction: column;
+    width: 1368px;
+}
+
+.ProjectsShortcutHeader{
+    height: 29px;
+    width: 276px;
+}
+
+
+
+.projects-shortcut-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}

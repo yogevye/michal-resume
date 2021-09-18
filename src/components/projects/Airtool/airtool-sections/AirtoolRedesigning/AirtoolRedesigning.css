@@ -1,0 +1,16 @@
+.AirtoolRedesigning {
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    font-color: #3F3939
+}
+
+.redesigning-bullets{
+    list-style-type: square;
+}
+
+.redesigning-images{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
