@@ -1,10 +1,15 @@
 import React from 'react';
-import styles from './Kabuli.module.css';
+import './Kabuli.css';
 
-const Kabuli = () => (
-  <div className={styles.Kabuli}>
-    Kabuli Component
-  </div>
+// @ts-ignore
+const Kabuli = ({projectLink}) => (
+    <div className="Kabuli">
+        <div/>
+        <img src={projectLink.header}/>
+        <div>
+            Kabuli
+        </div>
+    </div>
 );
 
 export default Kabuli;

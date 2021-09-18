@@ -1,10 +1,15 @@
 import React from 'react';
-import styles from './Jug.module.css';
+import './Jug.css';
 
-const Jug = () => (
-  <div className={styles.Jug}>
-    Jug Component
-  </div>
+// @ts-ignore
+const Jug = ({projectLink}) => (
+    <div className="Jug">
+        <div/>
+        <img src={projectLink.header}/>
+        <div>
+            Jug
+        </div>
+    </div>
 );
 
 export default Jug;

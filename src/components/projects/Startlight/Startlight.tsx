@@ -1,10 +1,15 @@
 import React from 'react';
-import styles from './Startlight.module.css';
+import './Startlight.css';
 
-const Startlight = () => (
-  <div className={styles.Startlight}>
-    Startlight Component
-  </div>
+// @ts-ignore
+const Startlight = ({projectLink}) => (
+    <div className="Startlight">
+        <div/>
+        <img src={projectLink.header}/>
+        <div>
+            Startlight
+        </div>
+    </div>
 );
 
 export default Startlight;

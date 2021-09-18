@@ -1,17 +1,27 @@
-import React, {useEffect, useState} from 'react';
+import React, {Component, useEffect, useState} from 'react';
 import './App.css';
 import {
     BrowserRouter as Router,
 } from 'react-router-dom';
 
 import Header from './components/Header/Header';
-import Body from "./components/Body/Body";
-import airtoolLogo from  './images/projects-logos/airtool-logo.svg'
-import JugLogo from  './images/projects-logos/Jug-logo.svg'
-import kabuliLogo from  './images/projects-logos/kabuli-logo.svg'
-import starlightLogo from  './images/projects-logos/starlight-logo.svg'
+import Body from './components/Body/Body';
+import airtoolLogo from './images/projects/logos/airtool-logo.svg'
+import JugLogo from './images/projects/logos/Jug-logo.svg'
+import kabuliLogo from './images/projects/logos/kabuli-logo.svg'
+import starlightLogo from './images/projects/logos/starlight-logo.svg'
+import Airtool from './components/projects/Airtool/Airtool';
+import Startlight from './components/projects/Startlight/Startlight';
+import Kabuli from './components/projects/Kabuli/Kabuli';
+import Jug from './components/projects/Jug/Jug';
+import airtoolHeader from './images/projects/headers/airtool-header.svg';
+import jugHeader from './images/projects/headers/jug-header.svg';
+import kabuliHeader from './images/projects/headers/kabuli-header.svg';
+import startlightHeader from './images/projects/headers/startlight-header.svg';
 
-// import Tail from "./components/Tail/Tail";
+
+
+// import Tail from './components/Tail/Tail';
 
 const BASIC_LINKS = [
     {
@@ -32,40 +42,54 @@ const BASIC_LINKS = [
     }
 ];
 
+const ProjectsComponents = {
+    'airtool': Airtool,
+    'Startlight': Startlight,
+    'Kabuli': Kabuli,
+    'jug': Jug
+};
 
 const PROJECTS_LINKS = [
     {
+        component: 'airtool',
         name: 'airtool',
         link: '/airtool',
         logo: airtoolLogo,
         redesignText: 'REDESIGN / TABLET / UX / UI',
         headLine: 'Airtool',
         description: `A tablet app designed to manage \n
-                      tools in aircraft hangars fast & easy.`
+                      tools in aircraft hangars fast & easy.`,
+        header: airtoolHeader
     },{
+        component: 'Startlight',
         name: 'Startlight',
         link: '/Startlight',
         logo: starlightLogo,
         redesignText: 'REDESIGN / COMPLEX / DESKTOP / UX / UI',
         headLine: 'Startlight',
         description: `A geospatial web system for \n
-            real-time air traffic control.`
+            real-time air traffic control.`,
+        header: startlightHeader
     },{
+        component: 'Kabuli',
         name: 'Kabuli',
         link: '/Kabuli',
         logo: kabuliLogo,
         redesignText: 'MOBILE / IDEATION / UX / UI',
         headLine: 'Kabuli',
         description: `A mobile app designed to help citizens \n
-                      be a part of their own security.`
+                      be a part of their own security.`,
+        header: kabuliHeader
     },{
+        component: 'jug',
         name: 'jug',
         link: '/jug',
         logo: JugLogo,
         redesignText: 'IDEATION / DESKTOP / UX / UI',
         headLine: 'Jug',
         description: `A web app for organizing and viewing \n
-                      surveillance camera footage.`
+                      surveillance camera footage.`,
+        header: jugHeader
     }
 ];
 
@@ -98,10 +122,10 @@ function App() {
 
   // @ts-ignore
   return (
-      <div className="App">
+      <div className='App'>
           <Router>
               <Header selectedNavbarLink = {selectedNavbarLink} currentLinkName={currentLinkName} basicLinks={BASIC_LINKS}/>
-              <Body projectsLinks={PROJECTS_LINKS}/>
+              <Body projectsLinks={PROJECTS_LINKS} ProjectsComponents={ProjectsComponents}/>
               {/*<Tail/>*/}
           </Router>
       </div>

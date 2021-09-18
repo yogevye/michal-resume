@@ -1,0 +1,4 @@
+.Jug {
+    display: flex;
+    flex-flow: column;
+}

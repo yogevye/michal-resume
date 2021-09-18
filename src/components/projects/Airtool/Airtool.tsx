@@ -1,9 +1,15 @@
 import React from 'react';
-import styles from './Airtool.module.css';
+import './Airtool.css';
+import pic from '../../../images/projects/airtool-logo.svg';
 
-const Airtool = () => (
-  <div className={styles.Airtool}>
-    Airtool Component
+// @ts-ignore
+const Airtool = ({projectLink}) => (
+  <div className="Airtool">
+      <div/>
+       <img src={projectLink.header}/>
+      <div>
+          Airtool
+      </div>
   </div>
 );
 
