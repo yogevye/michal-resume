@@ -9,13 +9,8 @@
 }
 
 .ProjectLogoContainer {
-    width: 58.33333333%;
-    padding-left: 0px;
-    background-size: cover;
-    background-position: 50% 50%;
-    padding-left: 0px;
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
+    min-width: 58.33333333%;
+    justify-content: stretch;
 }
 
 .ProjectLogo{
