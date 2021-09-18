@@ -7,9 +7,7 @@ import nameLogo from '../../images/name-logo.svg';
 const Header = ({selectedNavbarLink, currentLinkName, basicLinks}) => (
     <div className="header-warp">
         <div className="Header">
-            <div className="logo-name">
-                <img src={nameLogo} alt="name logo"/>
-            </div>
+            <img src={nameLogo} alt="name logo"/>
             <div className="Navbar-content">
                 <Navbar selectedNavbarLink={selectedNavbarLink} currentLinkName={currentLinkName} basicLinks={basicLinks}/>
             </div>

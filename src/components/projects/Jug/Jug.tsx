@@ -4,8 +4,8 @@ import './Jug.css';
 // @ts-ignore
 const Jug = ({projectLink}) => (
     <div className="Jug">
-        <div/>
-        <img src={projectLink.header}/>
+        {/*<div/>*/}
+        {/*<img src={projectLink.header}/>*/}
         <div>
             Jug
         </div>

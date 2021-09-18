@@ -3,17 +3,19 @@ import styles from './Body.module.css';
 import {Route, Switch} from "react-router-dom";
 import Home from "../basic/home-container/Home/Home";
 import About from "../basic/About/About";
+import ProjectContainer from "../projects/ProjectContainer/ProjectContainer";
 
 // @ts-ignore
 const Body = ({projectsLinks, ProjectsComponents}) => (
   <div className={styles.Body}>
       <Switch>
-          {projectsLinks.map((projectLink: { component: string | number; link: any; }) => {
+          {projectsLinks.map((projectLink: { component: string | number; link: any; name:string}) => {
               const ProjectComponent = ProjectsComponents[projectLink.component];
+              const filteredProjectsLinks = projectsLinks.filter((currProjectLink: {name:string}) => currProjectLink.name !== projectLink.name);
               console.log(projectLink);
               return (
                   <Route path={projectLink.link}>
-                      <ProjectComponent projectLink={projectLink}/>
+                      <ProjectContainer ProjectComponent={ProjectComponent} ProjectsLinks={filteredProjectsLinks}/>
                 </Route>
               )
           })}

@@ -18,6 +18,11 @@ import airtoolHeader from './images/projects/headers/airtool-header.svg';
 import jugHeader from './images/projects/headers/jug-header.svg';
 import kabuliHeader from './images/projects/headers/kabuli-header.svg';
 import startlightHeader from './images/projects/headers/startlight-header.svg';
+import AirToolLink from './images/projects/links/airtool-link.svg'
+import JugLinklLink from './images/projects/links/jug-link.svg'
+import kabuliLink from './images/projects/links/kabuli-link.svg'
+import StartligtLink from './images/projects/links/startligt-link.svg'
+
 
 
 
@@ -43,10 +48,30 @@ const BASIC_LINKS = [
 ];
 
 const ProjectsComponents = {
-    'airtool': Airtool,
-    'Startlight': Startlight,
-    'Kabuli': Kabuli,
-    'jug': Jug
+    'airtool': {
+        component: Airtool,
+        header: airtoolHeader,
+        title: 'AIRTOOL',
+        description: '\nA tablet app designed to manage tools in aircraft hangars fast & easy'
+    },
+    'Startlight': {
+        component: Startlight,
+        header: startlightHeader,
+        title: 'STARLIGHT',
+        description: 'A geospatial web system for real-time air traffic control'
+    },
+    'Kabuli': {
+        component: Kabuli,
+        header: kabuliHeader,
+        title: 'KABULI',
+        description: 'A mobile app designed to help citizens be a part of their own security'
+    },
+    'jug': {
+        component: Jug,
+        header: jugHeader,
+        title: 'JUG',
+        description: 'A web app for organizing and watching surveillance camera footage'
+    }
 };
 
 const PROJECTS_LINKS = [
@@ -59,7 +84,8 @@ const PROJECTS_LINKS = [
         headLine: 'Airtool',
         description: `A tablet app designed to manage \n
                       tools in aircraft hangars fast & easy.`,
-        header: airtoolHeader
+        linkLogo: AirToolLink
+
     },{
         component: 'Startlight',
         name: 'Startlight',
@@ -69,7 +95,8 @@ const PROJECTS_LINKS = [
         headLine: 'Startlight',
         description: `A geospatial web system for \n
             real-time air traffic control.`,
-        header: startlightHeader
+        header: startlightHeader,
+        linkLogo: StartligtLink
     },{
         component: 'Kabuli',
         name: 'Kabuli',
@@ -79,7 +106,8 @@ const PROJECTS_LINKS = [
         headLine: 'Kabuli',
         description: `A mobile app designed to help citizens \n
                       be a part of their own security.`,
-        header: kabuliHeader
+        header: kabuliHeader,
+        linkLogo: kabuliLink
     },{
         component: 'jug',
         name: 'jug',
@@ -89,7 +117,8 @@ const PROJECTS_LINKS = [
         headLine: 'Jug',
         description: `A web app for organizing and viewing \n
                       surveillance camera footage.`,
-        header: jugHeader
+        header: jugHeader,
+        linkLogo: JugLinklLink
     }
 ];
 
