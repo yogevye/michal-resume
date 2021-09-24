@@ -1,0 +1,3 @@
+.scanning-container > div:not(:last-child) {
+    padding-bottom: 40px;
+}

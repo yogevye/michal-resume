@@ -1,13 +1,13 @@
 import React from 'react';
-import './AirtoolOverviewAndTeam.css';
+import './AirtoolSection1.css';
 import AirtoolOverview from "./AirtoolOverview/AirtoolOverview";
 import AirtoolTeam from "./AirtoolTeam/AirtoolTeam";
 
-const AirtoolOverviewAndTeam = () => (
+const AirtoolSection1 = () => (
   <div className="AirtoolOverviewAndTeam">
     <AirtoolOverview/>
     <AirtoolTeam/>
   </div>
 );
 
-export default AirtoolOverviewAndTeam;
+export default AirtoolSection1;

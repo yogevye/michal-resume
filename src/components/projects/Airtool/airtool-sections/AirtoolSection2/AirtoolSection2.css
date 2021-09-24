@@ -5,10 +5,6 @@
     font-color: #3F3939
 }
 
-.redesigning-bullets{
-    list-style-type: square;
-}
-
 .redesigning-images{
     display: flex;
     flex-direction: row;
