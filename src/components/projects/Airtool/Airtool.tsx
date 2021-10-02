@@ -12,43 +12,54 @@ import AirtoolSection9 from "./airtool-sections/AirtoolSection9/AirtoolSection9"
 
 const sections = [
       {
-            component: AirtoolSection1
+            component: AirtoolSection1,
       },
       {
-            component: AirtoolSection2
+            component: AirtoolSection2,
+            backgroundColor: 'background-color-F2F3F5'
       },
       {
-            component: AirtoolSection3
+            component: AirtoolSection3,
       },
       {
-            component: AirtoolSection4
+            component: AirtoolSection4,
+            backgroundColor: 'background-color-F2F3F5'
       },
       {
-            component: AirtoolSection5
+            component: AirtoolSection5,
       },
       {
-            component: AirtoolSection6
+            component: AirtoolSection6,
+            backgroundColor: 'background-color-F2F3F5'
       },
       {
-            component: AirtoolSection7
+            component: AirtoolSection7,
       },
       {
-            component: AirtoolSection8
+            component: AirtoolSection8,
+            backgroundColor: 'background-color-F2F3F5'
       },
       {
-            component: AirtoolSection9
+            component: AirtoolSection9,
       }
 ];
 
 // @ts-ignore
 const Airtool = () => (
-  <div className="Airtool flex-column font-color-3F3939">
-        {sections.map(currSection => {
-              const Component = currSection.component;
-
-              return (<Component/>)
-        })}
-  </div>
+    <div className="flex-column padding-sections-bottom padding-sections-top full-width-capacity align-items-center">
+          {sections.map(currSection => {
+                const Component = currSection.component;
+                let className = 'flex-row full-width-capacity justify-content-center ';
+                className+= currSection.backgroundColor ? currSection.backgroundColor : '';
+                return (
+                    <div className={className}>
+                          <div className="flex-row project-content-width">
+                                <Component/>
+                          </div>
+                    </div>
+                )
+          })}
+    </div>
 );
 
 export default Airtool;

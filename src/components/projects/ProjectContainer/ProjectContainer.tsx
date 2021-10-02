@@ -10,22 +10,15 @@ const ProjectContainer = ({ProjectComponent, ProjectsLinks}) => {
     const description = ProjectComponent.description;
 
     return (
-        <div className="ProjectContainer">
-            <div className="header-logo" style={{backgroundImage: 'url(' + header + ')'}}>
-                    <div className="project-headline-wrap">
-                        <div className="project-headline">
-                            <div className="project-headline-text">
-                                <div className="project-title-test">{title}</div>
-                                <div className="project-title-description">{description}</div>
-                            </div>
-                        </div>
+        <div className="flex-column">
+            <div className="flex-column justify-content-end align-items-center full-width-capacity header-logo" style={{backgroundImage: 'url(' + header + ')'}}>
+                    <div className="flex-row align-items-center project-content-width font-color">
+                        <span className="font-70 font-weight-bold padding-right-20">{title}</span>
+                        <span className="project-title-description">{description}</span>
                     </div>
             </div>
-            <div className="project-content">
-                <div className="project-content-width">
-                    <Component/>
-                </div>
-            </div>
+            <Component/>
+
             <ProjectShortcut ProjectsLinks={ProjectsLinks} />
         </div>
     );

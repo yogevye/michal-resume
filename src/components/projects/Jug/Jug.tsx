@@ -9,32 +9,42 @@ import JugSection6 from "./sections/JugSection6/JugSection6";
 
 const sections = [
     {
-        component: JugSection1
+        component: JugSection1,
     },
     {
-        component: JugSection2
+        component: JugSection2,
+        backgroundColor: 'background-color-F2F3F5'
     },
     {
-        component: JugSection3
+        component: JugSection3,
     },
     {
-        component: JugSection4
+        component: JugSection4,
+        backgroundColor: 'background-color-F2F3F5'
     },
     {
-        component: JugSection5
+        component: JugSection5,
     },
     {
-        component: JugSection6
+        component: JugSection6,
+        backgroundColor: 'background-color-F2F3F5'
     }
 ];
 
 // @ts-ignore
 const Jug = ({projectLink}) => (
-    <div className="flex-column padding-sections-bottom padding-sections-top font-color-3F3939">
+    <div className="flex-column padding-sections-bottom padding-sections-top full-width-capacity align-items-center">
         {sections.map(currSection => {
             const Component = currSection.component;
-
-            return (<Component/>)
+            let className = 'flex-row full-width-capacity justify-content-center ';
+            className+= currSection.backgroundColor ? currSection.backgroundColor : '';
+            return (
+                <div className={className}>
+                    <div className="flex-row project-content-width">
+                        <Component/>
+                    </div>
+                </div>
+                )
         })}
     </div>
 );

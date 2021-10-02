@@ -11,13 +11,16 @@ const sections = [
         component: StartlightSection1
     },
     {
-        component: StartlightSection2
+        component: StartlightSection2,
+        backgroundColor: 'background-color-F2F3F5'
     },
     {
-        component: StartlightSection3
+        component: StartlightSection3,
     },
     {
-        component: StartlightSection4
+        component: StartlightSection4,
+        backgroundColor: 'background-color-F2F3F5'
+
     },
     {
         component: StartlightSection5
@@ -26,11 +29,18 @@ const sections = [
 
 // @ts-ignore
 const Startlight = () => (
-    <div className="flex-column padding-sections-bottom padding-sections-top font-color-3F3939">
+    <div className="flex-column padding-sections-bottom padding-sections-top full-width-capacity align-items-center">
         {sections.map(currSection => {
             const Component = currSection.component;
-
-            return (<Component/>)
+            let className = 'flex-row full-width-capacity justify-content-center ';
+            className+= currSection.backgroundColor ? currSection.backgroundColor : '';
+            return (
+                <div className={className}>
+                    <div className="flex-row project-content-width">
+                        <Component/>
+                    </div>
+                </div>
+            )
         })}
     </div>
 );
