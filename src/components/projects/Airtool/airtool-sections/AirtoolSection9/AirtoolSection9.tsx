@@ -6,6 +6,7 @@ import scanning2Img from '../../../../../images/projects/content/airtool/section
 import shpppingImg from '../../../../../images/projects/content/airtool/section9/shppping1.svg';
 import returnByUser1 from '../../../../../images/projects/content/airtool/section9/return-by-user-1.svg'
 import returnByUser2 from '../../../../../images/projects/content/airtool/section9/return-by-user-2.svg'
+import Paragraph from "../../../../utils/Pharagraph/Paragraph";
 
 const sectionHeader = 'New features';
 const text = 'I brainstormed a couple of changes and additions that are simple, yet powerful, to simplify the current user flow \n' +
@@ -103,32 +104,14 @@ const AirtoolSection9 = () => (
             </div>
             <div className="flex-column">
                 <h2 className="font-40 font-weight-bolder">Shopping cart experience</h2>
-                <p className="font-25">
-                    {
-                        shoppingText.map((textObj) => {
-                            if(textObj.bold){
-                                return (<span className="font-weight-bolder">{textObj.text}</span>)
-                            }
-                            return (textObj.text)
-                        })
-                    }
-                </p>
+                <Paragraph paragraph={shoppingText}/>
                 <div className="flex-column align-items-center scanning-container">
                     <div className="background-image width-880 height-614" style={{backgroundImage: 'url(' + shpppingImg + ')'}}/>
                 </div>
             </div>
             <div className="flex-column">
                 <h2 className="font-40 font-weight-bolder">Return by user</h2>
-                <p className="font-25">
-                    {
-                        ReturnByUserText.map((textObj) => {
-                            if(textObj.bold){
-                                return (<span className="font-weight-bolder">{textObj.text}</span>)
-                            }
-                            return (textObj.text)
-                        })
-                    }
-                </p>
+                <Paragraph paragraph={ReturnByUserText}/>
                 <div className="flex-column align-items-center scanning-container">
                     <div className="flex-row">
                         <div className="background-image width-880 height-614" style={{backgroundImage: 'url(' + returnByUser1 + ')'}}/>
