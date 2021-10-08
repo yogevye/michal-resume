@@ -11,7 +11,6 @@ const Header = ({selectedNavbarLink, currentLinkName, basicLinks}) => (
             <div className="Navbar-content">
                 <Navbar selectedNavbarLink={selectedNavbarLink} currentLinkName={currentLinkName} basicLinks={basicLinks}/>
             </div>
-
         </div>
     </div>
 
