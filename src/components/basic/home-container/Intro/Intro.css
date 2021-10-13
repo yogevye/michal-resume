@@ -1,25 +1,32 @@
 .Intro {
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
     font-family: "Lora";
+    padding-top: 40px;
 }
 
 .logo-container {
-    padding-left: 3%;
-    padding-right: 3%;
+    padding-right: 27px;
     padding-top: 27px;
 }
 
 .main-logo{
-    height: 11em;
+    height: 178px;
+    padding-top: 30px;
+    padding-right: 20px;
 }
 
 .description-container{
-    max-width: 645px;
+    /*max-width: 645px;*/
 }
 
 .new-line{
     white-space: pre-line;
+}
+
+.description-container p{
+    line-height: 40px;
 }
 
 .name-headline{
@@ -33,10 +40,41 @@
 }
 
 .description-test{
-    padding-top: 23px;
-    font-weight: lighter;
     font-family: "titillium web";
-    font-size: 25px;
-    line-height: 18px;
+    white-space: pre-line;
+}
 
+.intro_description {
+    font-family: "titillium web";
+}
+
+@media screen and (max-width: 767px) {
+    .Intro {
+        margin-left: 20px;
+        margin-right: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-container {
+        padding-right: initial;
+        padding-top: initial;
+        display: flex;
+        justify-content: center;
+    }
+
+    .main-logo {
+        height: 170px;
+        padding-bottom: 20px;
+        padding-top: 10px;
+        padding-right: initial;
+    }
+
+    .description-test{
+        white-space: initial;
+    }
+
+    .semi-title{
+        font-size: 25px;
+    }
 }

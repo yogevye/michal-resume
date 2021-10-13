@@ -1,0 +1,17 @@
+.emoji{
+    height: 34px;
+}
+
+.dreamTitle{
+    padding-right: 15px;
+}
+
+@media screen and (max-width: 767px) {
+    .emoji{
+        height: 28px;
+    }
+
+    .dreamTitle{
+        padding-right: 10px;
+    }
+}

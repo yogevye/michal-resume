@@ -1,7 +1,6 @@
 .AirtoolRedesigning {
     display: flex;
     flex-direction: column;
-    font-size: 25px;
     font-color: #3F3939
 }
 
@@ -9,4 +8,10 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+@media screen and (max-width: 767px) {
+    .new-line{
+        white-space: initial;
+    }
 }

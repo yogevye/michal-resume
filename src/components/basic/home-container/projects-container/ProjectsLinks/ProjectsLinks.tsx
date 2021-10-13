@@ -6,9 +6,7 @@ import ProjectsItems from "../ProjectsItems/Projects-items";
 // @ts-ignore
 const ProjectsLinks = ({projectsLinks}) => (
   <div className="ProjectsLinks">
-    <div className="projects-logo">
-        <img src={logo} alt="projects link logo" className="projects-links-logo"/>
-    </div>
+      <img src={logo} alt="projects link logo" className="projects-links-logo"/>
       <ProjectsItems projectsLinks={projectsLinks}/>
   </div>
 );

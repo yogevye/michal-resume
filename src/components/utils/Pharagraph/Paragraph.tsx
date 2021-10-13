@@ -1,4 +1,5 @@
 import React from 'react';
+import './Pharagraph.css'
 
 // @ts-ignore
 const Paragraph = ({paragraph, fontClass = 'font-25'}) => (

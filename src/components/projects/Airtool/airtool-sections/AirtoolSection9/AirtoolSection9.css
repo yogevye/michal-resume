@@ -1,3 +1,9 @@
 .scanning-container > div:not(:last-child) {
     padding-bottom: 40px;
 }
+
+@media screen and (max-width: 767px) {
+    .arrow-img{
+        height: 20px;
+    }
+}

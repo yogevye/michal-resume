@@ -1,4 +1,25 @@
-.Jug {
+
+.project-content-container {
     display: flex;
-    flex-flow: column;
+    flex-direction: row;
+    width: 1225px;
+    /*justify-content: center;*/
+}
+
+.background-color-F2F3F5{
+    background-color: #F2F3F5;
+}
+
+.project-content-sections-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@media screen and (max-width: 767px) {
+    .project-content-container {
+        width: 100%;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
 }

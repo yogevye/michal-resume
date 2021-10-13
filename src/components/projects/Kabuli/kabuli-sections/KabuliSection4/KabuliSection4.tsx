@@ -59,12 +59,12 @@ const KabuliSection4 = () => (
                 })}
             </div>
             <Paragraph paragraph={paragraph2}/>
-            <div className="flex-column align-items-center padding-divs-bottom-40">
-                <img src={image1}/>
-                <img src={image2}/>
+            <div className="flex-column align-items-center padding-divs-bottom-40 padding-bottom-40">
+                <img className="img-phone-full-capacity" src={image1}/>
+                <img className="img-phone-full-capacity" src={image2}/>
             </div>
             <Paragraph paragraph={paragraph3}/>
-            <img src={image3}/>
+            <img className="img-phone-full-capacity" src={image3}/>
         </div>
     </div>
 );

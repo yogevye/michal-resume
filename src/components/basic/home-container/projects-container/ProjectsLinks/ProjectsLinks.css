@@ -5,6 +5,14 @@
 }
 
 .projects-links-logo{
+    padding-bottom: 30px;
     height: 29px;
     width: 276px;
+}
+
+@media screen and (max-width: 767px) {
+    .projects-links-logo{
+        height: 20px;
+        width: 215px;
+    }
 }

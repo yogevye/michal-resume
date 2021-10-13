@@ -1,3 +1,9 @@
 .section-5-bullets li:not(:last-child) {
     padding-bottom: 40px;
 }
+
+@media screen and (max-width: 767px) {
+    .section-5-bullets li:not(:last-child) {
+        padding-bottom: 10px;
+    }
+}

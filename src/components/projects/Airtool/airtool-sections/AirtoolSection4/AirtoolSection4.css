@@ -1,1 +1,30 @@
-.AirtoolSection4 {}
+.section4__container {
+    width: 982px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section4__container-2{
+    display: flex;
+    flex-direction: column;
+    width: 837px;
+    background-color: #B6DDDF;
+    border-radius: 22px;
+    justify-content: space-between;
+}
+
+.section4__container-2-content{
+    margin: 30px;
+}
+
+@media screen and (max-width: 767px) {
+    .section4__container {
+        width: 100%;
+    }
+
+    .section4__container-2 {
+        width: 100%;
+    }
+}
+

@@ -8,7 +8,7 @@ const AirtoolSection8 = () => (
     <div className="flex-column font-25 font-color-3F3939 padding-bottom-40">
         <h1 className="new-line font-50 bold-text">{sectionHeader}</h1>
         <div className="flex-row justify-content-center">
-            <div className="background-image width-1196 height-859" style={{backgroundImage: 'url(' + appMapImg + ')'}}/>
+            <img className="img-phone-full-capacity" src={appMapImg}/>
         </div>
     </div>
 );

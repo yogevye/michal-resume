@@ -10,13 +10,13 @@ const disclamer = 'Disclamer - for reasons of information security, no photograp
 
 const AirtoolOverview = () => (
   <div className="AirtoolOverview">
-    <h1 className="airtool-overview-title">
+    <h1 className="airtool-overview-title font-25">
         {title}
     </h1>
-      <p className="new-line airtool-overview-text">
+      <p className="new-line font-25">
           {overiewText}
       </p>
-      <p className="new-line airtool-fun-fact">
+      <p className="new-line font-25">
           <span className="bold-text"> Fun fact </span> - if even 1 tool is missing,<mark> not a single plane can take off! </mark>
       </p>
       <p className="new-line airtool-disclamer">

@@ -18,7 +18,7 @@ const description = 'With the main goals in mind, we went for the blackboard and
     'improving user experience for the entire flow and creating a wholesome process from beginning to end.';
 
 const section1 = {
-    title: '# 1 - Time navigation',
+    title: ' # 1 - Time navigation ',
     p1: [
         {
             text: 'Quick and fun navigator, which requires mouse only and includes image of all saved data, to let users know just how far to the past they can go. The bar would appear on hover and will give 2-hour windows for time selection. '
@@ -76,28 +76,28 @@ const JugSection5 = () => (
             {description}
         </p>
 
-        <div className="flex-column sections padding-divs-bottom-40">
+        <div className="flex-column padding-semi-sections-bottom padding-semi-sections-top">
             <div className="flex-column first-section">
                 <ColoredHeadline text={section1.title} backgroudColor="background-color-E1D6F0"/>
                 <Paragraph paragraph={section1.p1}/>
-                <div className="flex-row space-around">
-                    <img src={img11}/>
-                    <img src={img12}/>
+                <div className="jug-section-5__images-wrapper-1">
+                    <img className="jug-section-5__img" src={img11}/>
+                    <img className="jug-section-5__img" src={img12}/>
                 </div>
             </div>
             <div className="flex-column second-section">
                 <ColoredHeadline text={section2.title}  backgroudColor="background-color-E1D6F0"/>
                 <Paragraph paragraph={section2.p1}/>
                 <div className="flex-row justify-content-center">
-                    <img src={img21}/>
+                    <img className="jug-section-5__img" src={img21}/>
                 </div>
             </div>
             <div className="flex-column third-section">
                 <ColoredHeadline text={section3.title}  backgroudColor="background-color-E1D6F0"/>
                 <Paragraph paragraph={section3.p1}/>
-                <div className="flex-row space-around">
-                    <img src={img31}/>
-                    <img src={img32}/>
+                <div className="jug-section-5__images-wrapper-1">
+                    <img className="jug-section-5__img" src={img31}/>
+                    <img className="jug-section-5__img" src={img32}/>
                 </div>
             </div>
         </div>

@@ -1,23 +1,11 @@
 .AirtoolOverview {
+    margin-right: 20px;
     display: flex;
     flex-direction: column;
 }
 
 .airtool-overview-title{
-    font-size: 25px;
     color: #878787;
-    font-weight: normal;
-}
-
-.airtool-overview-text{
-    font-size: 25px;
-    color: #3F3939;
-    font-weight: normal;
-}
-
-.airtool-fun-fact{
-    font-size: 25px;
-    color: #3F3939;
     font-weight: normal;
 }
 
@@ -33,4 +21,14 @@
     font-size: 20px;
     color: #878787;
     font-weight: normal;
+}
+
+@media screen and (max-width: 767px) {
+    .airtool-disclamer {
+        font-size: 13px;
+    }
+
+    .new-line{
+        white-space: initial;
+    }
 }

@@ -6,6 +6,7 @@ import scanning2Img from '../../../../../images/projects/content/airtool/section
 import shpppingImg from '../../../../../images/projects/content/airtool/section9/shppping1.svg';
 import returnByUser1 from '../../../../../images/projects/content/airtool/section9/return-by-user-1.svg'
 import returnByUser2 from '../../../../../images/projects/content/airtool/section9/return-by-user-2.svg'
+import arrowImg from '../../../../../images/arrow-down.svg';
 import Paragraph from "../../../../utils/Pharagraph/Paragraph";
 
 const sectionHeader = 'New features';
@@ -72,7 +73,7 @@ const AirtoolSection9 = () => (
     <div className="flex-column font-25 font-color-3F3939 padding-bottom-40">
         <h1 className="new-line font-50 bold-text">{sectionHeader}</h1>
         <p className="new-line font-25">{text}</p>
-        <div className="flex-column">
+        <div className="flex-column padding-divs-bottom-40">
             <div className="flex-column">
                 <h2 className="font-40 font-weight-bolder">Dashboard</h2>
                 <p className="font-25">
@@ -81,7 +82,7 @@ const AirtoolSection9 = () => (
                     {dashboardText3}
                 </p>
                 <div className="flex-row justify-content-center">
-                    <div className="background-image width-880 height-614" style={{backgroundImage: 'url(' + dashboardImg + ')'}}/>
+                    <img className="img-phone-full-capacity" src={dashboardImg}/>
                 </div>
             </div>
             <div className="flex-column">
@@ -94,19 +95,16 @@ const AirtoolSection9 = () => (
                     {scanningText5}
                 </p>
                 <div className="flex-column align-items-center scanning-container">
-                    <div className="flex-row">
-                        <div className="background-image width-880 height-614" style={{backgroundImage: 'url(' + scanningImg + ')'}}/>
-                    </div>
-                    <div className="flex-row">
-                        <div className="background-image width-880 height-614" style={{backgroundImage: 'url(' + scanning2Img + ')'}}/>
-                    </div>
+                    <img className="img-phone-full-capacity" src={scanningImg}/>
+                    <img className="arrow-img" src={arrowImg}/>
+                    <img className="img-phone-full-capacity" src={scanning2Img}/>
                 </div>
             </div>
             <div className="flex-column">
                 <h2 className="font-40 font-weight-bolder">Shopping cart experience</h2>
                 <Paragraph paragraph={shoppingText}/>
                 <div className="flex-column align-items-center scanning-container">
-                    <div className="background-image width-880 height-614" style={{backgroundImage: 'url(' + shpppingImg + ')'}}/>
+                    <img className="img-phone-full-capacity" src={shpppingImg}/>
                 </div>
             </div>
             <div className="flex-column">
@@ -114,10 +112,10 @@ const AirtoolSection9 = () => (
                 <Paragraph paragraph={ReturnByUserText}/>
                 <div className="flex-column align-items-center scanning-container">
                     <div className="flex-row">
-                        <div className="background-image width-880 height-614" style={{backgroundImage: 'url(' + returnByUser1 + ')'}}/>
+                        <img className="img-phone-full-capacity" src={returnByUser1}/>
                     </div>
                     <div className="flex-row">
-                        <div className="background-image width-880 height-614" style={{backgroundImage: 'url(' + returnByUser2 + ')'}}/>
+                        <img className="img-phone-full-capacity" src={returnByUser2}/>
                     </div>
                 </div>
             </div>

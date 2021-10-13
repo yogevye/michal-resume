@@ -94,77 +94,88 @@ const timelineP4 = [
 const JugSection6 = () => (
     <div className="flex-column padding-divs-bottom-50">
         <div className="flex-column">
-            <h1>Design</h1>
+            <h1 className="font-50">Design</h1>
             <p>
                 {description}
             </p>
         </div>
         <div className="flex-column">
             <h2>Visual Interface</h2>
-            <div className="flex-row align-items-center">
-                <span className="padding-right-20">Logo</span>
-                <img src={logo}/>
-            </div>
-            <div className="flex-row justify-content-center img-padding">
-                <img src={img11}/>
-            </div>
-            <div className="flex-row justify-content-center img-padding">
-                <img src={img12}/>
-            </div>
-            <div className="flex-row align-items-center">
-                <span className="padding-right-20">Color palette</span>
-                <img src={colors}/>
+            <div className="flex-column padding-divs-bottom-20">
+                <div className="flex-row align-items-center">
+                    <span className="padding-right-20 font-25">Logo</span>
+                    <img className="jug-section-6_logo-img" src={logo}/>
+                </div>
+                <div className="flex-row align-items-center">
+                    <span className="padding-right-20 font-25">Color palette</span>
+                    <img className="jug-section-6_color-img" src={colors}/>
+                </div>
             </div>
         </div>
         <div className="flex-column">
             <h2>Time line</h2>
             <Paragraph paragraph={timelineP1}/>
             <div className="flex-row justify-content-center img-padding">
-                <img src={img21}/>
+                <img className="img-phone-full-capacity" src={img11}/>
             </div>
             <div className="flex-row justify-content-center img-padding">
-                <img src={img22}/>
-            </div>
-            <div className="flex-row justify-content-center img-padding">
-                <img src={img23}/>
-            </div>
-            <div className="flex-row justify-content-center img-padding">
-                <img src={img24}/>
+                <img className="img-phone-full-capacity" src={img12}/>
             </div>
         </div>
         <div className="flex-column">
             <h2>Time navigation</h2>
             <Paragraph paragraph={timelineP2}/>
             <div className="flex-column align-items-center img-padding">
+                <h4>Select a year</h4>
+                <img className="img-phone-full-capacity" src={img21}/>
+            </div>
+            <div className="flex-column align-items-center img-padding">
+                <h4>Select a month</h4>
+                <img className="img-phone-full-capacity" src={img22}/>
+            </div>
+            <div className="flex-column align-items-center img-padding">
+                <h4>Select a day</h4>
+                <img className="img-phone-full-capacity" src={img23}/>
+            </div>
+            <div className="flex-column align-items-center img-padding">
+                <h4>Select an hour</h4>
+                <img className="img-phone-full-capacity" src={img24}/>
+            </div>
+        </div>
+        <div className="Saving and viewing events">
+            <h2>Saving and viewing events</h2>
+            <Paragraph paragraph={timelineP3}/>
+            <div className="flex-column align-items-center img-padding">
                 <h4>Pick time frame</h4>
-                <img src={img31}/>
+                <img className="img-phone-full-capacity" src={img31}/>
             </div>
             <div className="flex-column align-items-center img-padding">
                 <h4>Create event</h4>
-                <img src={img32}/>
+                <img className="img-phone-full-capacity" src={img32}/>
             </div>
             <div className="flex-row justify-content-center img-padding">
-                <img src={img33}/>
+                <img className="img-phone-full-capacity" src={img33}/>
             </div>
             <div className="flex-column align-items-center img-padding">
                 <h4>Event list</h4>
-                <img src={img34}/>
+                <img className="img-phone-full-capacity" src={img34}/>
             </div>
             <div className="flex-column align-items-center img-padding">
-                <img src={img35}/>
+                <img className="img-phone-full-capacity" src={img35}/>
             </div>
         </div>
+
         <div className="Saving and viewing events">
             <h2>Story</h2>
             <Paragraph paragraph={timelineP4}/>
             <div className="flex-column align-items-center img-padding">
-                <img src={img41}/>
+                <img className="img-phone-full-capacity" src={img41}/>
             </div>
             <div className="flex-column align-items-center img-padding">
-                <img src={img42}/>
+                <img className="img-phone-full-capacity" src={img42}/>
             </div>
             <div className="flex-column align-items-center img-padding">
-                <img src={img43}/>
+                <img className="img-phone-full-capacity" src={img43}/>
             </div>
         </div>
     </div>

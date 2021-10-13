@@ -5,10 +5,10 @@ import './StartlightHumanFlow.css';
 const StartlightHumanFlow = ({humanContent}) => (
     <div className="flex-column">
         <div className="flex-row justify-content-center">
-            <div className="flex-row width-917 height-335 border-radius-22 background-color-DFDFDF">
+            <div className="flex-row humanFlowContainer border-radius-22 background-color-DFDFDF">
                 <div className="flex-column full-width-capacity margin-40">
                     <div className="flex-row space-between align-items-center">
-                        <div className="flex-row align-items-center justify-content-center width-207 height-51 border-radius-35 background-color-F69193">
+                        <div className="flex-row align-items-center justify-content-center humanFlowContainer_title border-radius-35 background-color-F69193">
                             <span className="font-color-3F3939 font-25">{humanContent.type}</span>
                         </div>
                         <div className="flex-column font-25 align-items-center">

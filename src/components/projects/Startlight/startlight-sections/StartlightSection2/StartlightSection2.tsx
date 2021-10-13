@@ -1,13 +1,16 @@
 import React from 'react';
 import './StartlightSection2.css';
 import Paragraph from "../../../../utils/Pharagraph/Paragraph";
-import StartlightHumanFlow from "./StartlightHumanFlow/StartlightHumanFlow";
 import bluePlainImg from '../../../../../images/projects/content/startlight/section-2/blue-plane.svg'
 import greenPlainImg from '../../../../../images/projects/content/startlight/section-2/green-plan.svg'
-import FluracentImg from '../../../../../images/projects/content/startlight/section-2/fluracent.svg';
-import ScreensImg from '../../../../../images/projects/content/startlight/section-2/screens.svg';
-import MouseImg from '../../../../../images/projects/content/startlight/section-2/mouse.svg';
-import HeadphonesImg from '../../../../../images/projects/content/startlight/section-2/headphones.svg';
+import humanFlow1 from '../../../../../images/projects/content/startlight/section-2/human-flow-1.svg'
+import humanFlow2 from '../../../../../images/projects/content/startlight/section-2/human-flow-2.svg'
+import humanFlow3 from '../../../../../images/projects/content/startlight/section-2/human-flow-3.svg'
+import humanPhoneFlow1 from '../../../../../images/projects/content/startlight/section-2/human-flow-phone-1.svg'
+import humanPhoneFlow2 from '../../../../../images/projects/content/startlight/section-2/human-flow-phone-2.svg'
+import humanPhoneFlow3 from '../../../../../images/projects/content/startlight/section-2/human-flow-phone-3.svg'
+import officeImg from '../../../../../images/projects/content/startlight/section-2/office-laout.svg'
+
 
 const sectionHeader = 'Studying the users\n' +
     '& the craft';
@@ -38,71 +41,6 @@ const description = [
     },
 ];
 
-const humanFlowSections = [
-    {
-        type: 'Coordinator',
-        ageRange: '19-21',
-        level: {
-            title: 'Intermediate',
-            fontColor: 'font-color-FFA234'
-        },
-        bullets: [
-            'Gathers information on each track in the designated area.',
-            'Inquires external factors for further research.',
-            'Must know every single detail on the map and fetch information quickly.'
-        ],
-        flowImage: {
-            img: bluePlainImg,
-        }
-    },
-    {
-        type: 'Supervisor',
-        ageRange: '20-22',
-        level: {
-            title: 'High',
-            fontColor: 'font-color-1FAB1D'
-        },
-        bullets: [
-            'Oversees the work of all the coordinators.',
-            'Maintains precise status of the airspace.',
-            'Gets critical updates from the coordinators and passes it along if necessary.'
-        ],
-        flowImage: {
-            img: greenPlainImg,
-        }
-    },
-    {
-        type: 'Officer',
-        ageRange: '12-50+',
-        level: {
-            title: 'Varies',
-            fontColor: 'font-color-F69193'
-        },
-        bullets: [
-            'Decides course of action based on research done by earlier factors.',
-            'Approves uncertainties and extreme cases. ',
-            'The end point of the data utilization.'
-        ]
-    }
-];
-
-const WorkEnvironmentDescription = [
-    {
-        text: 'The users work in a big ',
-    },
-    {
-        text: 'underground',
-        bold: true
-    },
-    {
-        text: ' room with 6-15 people, manning the operation ',
-    },
-    {
-        text: '24/7.',
-        bold: true
-    },
-];
-
 const StartlightSection2 = () => (
     <div className="flex-column">
         <h1 className="new-line font-50 bold-text">{sectionHeader}</h1>
@@ -112,29 +50,28 @@ const StartlightSection2 = () => (
                 <h2 className="font-40 font-weight-bolder">
                     The human flow
                 </h2>
-                <div className="flex-column">
-                    {humanFlowSections.map((humanFlowSection) => (
-                        <StartlightHumanFlow humanContent={humanFlowSection}/>
-                    ))}
+                <div className="flex-column align-items-center humanFlowContainer padding-img-bottom-20">
+                    <img src={humanFlow1}/>
+                    <img className="airopline" src={bluePlainImg}/>
+                    <img src={humanFlow2}/>
+                    <img className="airopline" src={greenPlainImg}/>
+                    <img src={humanFlow3}/>
+                </div>
+
+                <div className="humanFlowPhoneContainer">
+                    <img src={humanPhoneFlow1}/>
+                    <img className="airopline" src={bluePlainImg}/>
+                    <img src={humanPhoneFlow2}/>
+                    <img className="airopline" src={greenPlainImg}/>
+                    <img src={humanPhoneFlow3}/>
                 </div>
             </div>
             <div className="flex-column">
-                <h2 className="font-40 font-weight-bolder">
+                <h2 className="workHeader">
                     Work Environement
                 </h2>
                 <div className="flex-row justify-content-center">
-                    <div className="flex-column align-items-center">
-                        <Paragraph paragraph={WorkEnvironmentDescription}/>
-                        <div className="width-208 height-176" style={{backgroundImage: 'url(' + FluracentImg + ')'}}/>
-                        <div className="flex-column align-items-center">
-                            <div className="width-537 height-385" style={{backgroundImage: 'url(' + ScreensImg + ')'}}/>
-                            <span className="font-25">4 screens in each working-station</span>
-                        </div>
-                        <div className="flex-row align-items-center width-800 space-between">
-                            <div className="width-282 height-258" style={{backgroundImage: 'url(' + HeadphonesImg + ')'}}/>
-                            <div className="width-348 height-156" style={{backgroundImage: 'url(' + MouseImg + ')'}}/>
-                        </div>
-                    </div>
+                    <img className="img-phone-full-capacity" src={officeImg}/>
                 </div>
             </div>
         </div>

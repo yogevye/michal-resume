@@ -1,1 +1,11 @@
-.StartlightSection4 {}
+.section-4_img {
+    width: 854px;
+    align-self: center;
+    padding-top: 20px;
+}
+
+@media screen and (max-width: 767px) {
+    .section-4_img {
+        width: 100%;
+    }
+}

@@ -12,7 +12,9 @@
 
 .ProjectsShortcutHeader{
     height: 29px;
-    width: 276px;
+    padding-bottom: 40px;
+    align-self: flex-start;
+    padding-left: 20px;
 }
 
 
@@ -23,3 +25,25 @@
     flex-direction: row;
     justify-content: space-between;
 }
+
+@media screen and (max-width: 767px) {
+    .ProjectLinkLogo {
+        width: 320px;
+    }
+
+    .projects-shortcut-container {
+        justify-content: center;
+    }
+
+    .ProjectsShortcutHeader {
+        height: 20px;
+        width: initial;
+        padding-bottom: 27px;
+        padding-left: 40px;
+    }
+
+    .ProjectShortcut{
+        width: 100%;
+    }
+}
+

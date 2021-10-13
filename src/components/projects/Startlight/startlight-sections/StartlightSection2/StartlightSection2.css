@@ -1,1 +1,57 @@
-.StartlightSection2 {}
+.humanFlowContainer {
+    margin-right: 100px;
+    margin-right: 100px;
+}
+
+.airopline{
+    margin-right: 50px;
+    align-self: flex-end;
+}
+
+.humanFlowPhoneContainer{
+    display: none;
+}
+
+.workHeader{
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.two-pic-in-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 800px;
+}
+
+@media screen and (max-width: 767px) {
+    .humanFlowPhoneContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .humanFlowPhoneContainer >img:not(:last-child) {
+        padding-bottom: 20px;
+    }
+
+    .humanFlowContainer{
+        display: none;
+    }
+
+    .airopline{
+        margin-right: initial;
+    }
+
+    .workHeader{
+        font-size: 27px;
+    }
+
+    .img-phone-half-capacity{
+        width: 50%;
+    }
+
+    .two-pic-in-row{
+        width: 100%;
+    }
+}

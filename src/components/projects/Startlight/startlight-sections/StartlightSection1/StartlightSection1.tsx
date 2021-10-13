@@ -35,12 +35,13 @@ const sections = [
         ]
     },
     {
-        title: 'OVERVIEW',
+        title: 'REDESIGN - WHY WERE WE CALLED?',
         description: [
             {
-                text: 'STARLIGHT shows real-time aircraft flight tracking, including information on each tracking and actions for further\n' +
-                    'research. Starlight is 1 of 4 operational apps that work in harmony and synchronization for the Israeli Air Force, \n' +
-                    'in order to protect the airspace. All 4 apps were designed by me in the past 3 years.'
+                text: 'The former system is a leagcy software that was published in the early 2000\'s. With the new technologies we now ' +
+                    'have, a decision was made to create a new app from scratch with improved capabilities and fine user experience.' +
+                    'The purpose of redesigning this product was, mainly, to  , and so - increase the level of the system’s ability to help' +
+                    'the operational process. '
             }
         ]
     },
@@ -50,10 +51,10 @@ const StartlightSection1 = () => (
     <div className="flex-column padding-divs-bottom-40">
         {sections.map((section) => (
                 <div className="flex-column">
-                    <h1 className="font-25 font-color-878787 font-weight-normal">{section.title}</h1>
-                    {section.extraIcon ?
-                            <div className="background-image" style={{backgroundImage: 'url(' + section.extraIcon + ')'}}/>
-                        : null}
+                    <div className="flex-row">
+                        <h1 className="font-25 font-color-878787 font-weight-normal dreamTitle">{section.title}</h1>
+                        {section.extraIcon ? <img className="emoji" src={section.extraIcon}/> : null}
+                    </div>
                     <Paragraph paragraph={section.description}/>
                 </div>
             ))}

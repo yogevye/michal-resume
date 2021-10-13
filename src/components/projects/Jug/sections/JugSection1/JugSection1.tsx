@@ -11,14 +11,17 @@ const bullets = [
 ];
 
 const JugSection1 = () => (
-  <div className="flex-row">
-    <div className="flex-column jug-overview">
-        <h1 className="font-25 font-weight-normal font-color-878787">OVERVIEW</h1>
-        <p className="font-25">{description}</p>
+  <div className="jug-section-1">
+    <div className="flex-row jug-overview">
+        <div className="flex-column jug-section-1__overview-content">
+            <h1 className="jug-section-1__header">OVERVIEW</h1>
+            <p>{description}</p>
+        </div>
+
     </div>
       <div className="flex-column">
-        <h1 className="font-25 font-weight-normal font-color-878787">TEAM</h1>
-          <ul className="redesigning-bullets font-25">
+        <h1 className="jug-section-1__header">TEAM</h1>
+          <ul className="redesigning-bullets">
               {
                   bullets.map((bullet) => {
                       return (<li>{<span className={bullet.bold ? 'font-weight-bold' : ''}>{bullet.text}</span>}</li>)

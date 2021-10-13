@@ -1,4 +1,27 @@
 .logo-size {
-    width: 39px;
+    /*width: 39px;*/
     height: 37px;
+    padding-right: 10px;
+}
+
+.section3_img{
+    display: initial;
+}
+
+.section3_phone_img{
+    display: none;
+}
+
+@media screen and (max-width: 767px)  {
+    .logo-size{
+        height: 28px;
+    }
+
+    .section3_img{
+        display: none;
+    }
+
+    .section3_phone_img{
+        display: initial;
+    }
 }

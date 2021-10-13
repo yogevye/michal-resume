@@ -1,12 +1,13 @@
 import React, {useEffect, useState} from 'react';
 import './App.css';
+import './main.css'
 import {
     BrowserRouter as Router,
 } from 'react-router-dom';
 
 import Header from './components/Header/Header';
 import Body from './components/Body/Body';
-import airtoolLogo from './images/projects/logos/airtool-logo.svg'
+import airtoolLogo from './images/projects/logos/airtool-logo.png'
 import JugLogo from './images/projects/logos/Jug-logo.svg'
 import kabuliLogo from './images/projects/logos/kabuli-logo.svg'
 import starlightLogo from './images/projects/logos/starlight-logo.svg'
@@ -14,19 +15,22 @@ import Airtool from './components/projects/Airtool/Airtool';
 import Startlight from './components/projects/Startlight/Startlight';
 import Kabuli from './components/projects/Kabuli/Kabuli';
 import Jug from './components/projects/Jug/Jug';
-import airtoolHeader from './images/projects/headers/airtool-header.svg';
-import jugHeader from './images/projects/headers/jug-header.svg';
-import kabuliHeader from './images/projects/headers/kabuli-header.svg';
-import startlightHeader from './images/projects/headers/startlight-header.svg';
+
+import airtoolHeader from './images/projects/headers/airtool-header.png';
+import jugHeader from './images/projects/headers/jug-header.png';
+import kabuliHeader from './images/projects/headers/kabuli-header.png';
+import startlightHeader from './images/projects/headers/starlight-header.png';
+
+import airtoolMobileHeader from './images/projects/headers/airtool-mobile-header.png';
+import jugMobileHeader from './images/projects/headers/jug-mobile-header.png';
+import kabuliMobileHeader from './images/projects/headers/kabuli-mobile-header.png';
+import startlightMobileHeader from './images/projects/headers/startlight-mobile-header.png';
+
 import AirToolLink from './images/projects/links/airtool-link.svg'
 import JugLinklLink from './images/projects/links/jug-link.svg'
 import kabuliLink from './images/projects/links/kabuli-link.svg'
 import StartligtLink from './images/projects/links/startligt-link.svg'
-
-
-
-
-// import Tail from './components/Tail/Tail';
+import linkdin from './images/linkdin.svg'
 
 const BASIC_LINKS = [
     {
@@ -43,7 +47,7 @@ const BASIC_LINKS = [
     },
     {
         title: 'CONTACT',
-        link: '/',
+        link: '/#contact',
     }
 ];
 
@@ -51,26 +55,30 @@ const ProjectsComponents = {
     'airtool': {
         component: Airtool,
         header: airtoolHeader,
+        headerMobile: airtoolMobileHeader,
         title: 'AIRTOOL',
-        description: '\nA tablet app designed to manage tools in aircraft hangars fast & easy'
+        description: 'A tablet app designed to manage\n tools in aircraft hangars fast & easy'
     },
     'Startlight': {
         component: Startlight,
         header: startlightHeader,
+        headerMobile: startlightMobileHeader,
         title: 'STARLIGHT',
-        description: 'A geospatial web system for real-time air traffic control'
+        description: 'A geospatial web system for\n real-time air traffic control'
     },
     'Kabuli': {
         component: Kabuli,
         header: kabuliHeader,
+        headerMobile: kabuliMobileHeader,
         title: 'KABULI',
-        description: 'A mobile app designed to help citizens be a part of their own security'
+        description: 'A mobile app designed to help citizens\n be a part of their own security'
     },
     'jug': {
         component: Jug,
         header: jugHeader,
+        headerMobile: jugMobileHeader,
         title: 'JUG',
-        description: 'A web app for organizing and watching surveillance camera footage'
+        description: 'A web app for organizing and watching\n surveillance camera footage'
     }
 };
 
@@ -130,11 +138,6 @@ function App() {
     const {currentLinkName} = state;
 
     useEffect(() => {
-        const currentLinkNameFromStorage =  JSON.parse(localStorage.getItem(LOCAL_STORAGE_CURRENT_LINK) as string);
-        if(currentLinkNameFromStorage) setState({currentLinkName: currentLinkNameFromStorage})
-    }, []);
-
-    useEffect(() => {
         localStorage.setItem(LOCAL_STORAGE_CURRENT_LINK, JSON.stringify(currentLinkName))
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [state]);
@@ -151,14 +154,34 @@ function App() {
 
   // @ts-ignore
   return (
-      <div className='App'>
-          <Router>
-              <Header selectedNavbarLink = {selectedNavbarLink} currentLinkName={currentLinkName} basicLinks={BASIC_LINKS}/>
-              <Body projectsLinks={PROJECTS_LINKS} ProjectsComponents={ProjectsComponents}/>
-              {/*<Tail/>*/}
-          </Router>
-      </div>
+          <div className='flex-column background-color-fafafa font-family-titillium font-25 font-color-3F3939 App padding-bottom-40'>
+              <Router>
+                  <Header selectedNavbarLink = {selectedNavbarLink} currentLinkName={currentLinkName} basicLinks={BASIC_LINKS}/>
+                  <div className="page-content">
+                      <Body projectsLinks={PROJECTS_LINKS} ProjectsComponents={ProjectsComponents}/>
+                  </div>
 
+
+                  {/*<Tail/>*/}
+              </Router>
+              <div className="footer-wrapper">
+                  <div id="contact" className="footer flex-column align-items-center">
+                      <section className="footer__title font-40 font-weight-bold">
+                          Let’s connect
+                      </section>
+                      <section className="padding-bottom-10 footer_mail">
+                          <a href = "mailto: michal.d.amrami@gmail.com">michal.d.amrami@gmail.com</a>
+                      </section>
+                      <section className="font-40 font-weight-bold">
+                          <a href="https://www.linkedin.com/in/michal-amrami/" target="_blank"> <img src={linkdin}/> </a>
+                      </section>
+                      <section className="footer_mail">
+                          0547975122
+                      </section>
+                  </div>
+              </div>
+
+          </div>
   );
 }
 

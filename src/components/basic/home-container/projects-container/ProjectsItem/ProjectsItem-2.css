@@ -1,0 +1,130 @@
+.ProjectLink{
+    text-decoration: none;
+}
+
+.ProjectsItem{
+    font-family: "titillium web";
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+    text-decoration: none;
+    color: var(--header-font-color);
+    box-shadow: 0px 0px 10px 1px rgba(122, 122, 122, 0.35);
+    box-sizing: content-box;
+    border-radius: 14px;
+}
+
+.project-log{
+    height: 100%;
+    width: 735px;
+    border-bottom-left-radius: 14px;
+    border-top-left-radius: 14px;
+}
+
+.CardContainer{
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    height: 434px;
+}
+
+.cardContent{
+    margin: 30px 40px 30px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content:  space-between;
+    max-width: 500px;
+    text-decoration: none;
+}
+
+.ProjectDescription{
+    display: flex;
+    flex-direction: column;
+}
+
+.ProjectDescription > span:not(last-of-type){
+    padding-bottom: 20px;
+}
+
+.ProjectDescription__first{
+    text-decoration: none;
+    font-size: 18px;
+    color: #878787;
+    font-weight: lighter;
+}
+
+.ProjectDescription__second {
+    color: #2E2E2E;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.ProjectDescription__third{
+    color: #2E2E2E;
+    font-size: 25px;
+    font-weight: lighter;
+}
+
+.go-to{
+    color: #2E2E2E;
+    font-size: 25px;
+    text-decoration: none
+}
+
+.arrow-img{
+    padding-left: 20px;
+}
+
+@media screen and (max-width: 767px)  {
+    .ProjectsItem{
+        flex-flow: column wrap;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .project-log{
+        height: 100%;
+        width: 100%;
+        border-bottom-right-radius: initial;
+        border-bottom-left-radius: initial;
+        border-top-right-radius: 14px;
+        border-top-left-radius: 14px;
+    }
+
+    .CardContainer{
+        height: 250px;
+    }
+
+    .cardContent{
+        margin: 20px 10px 20px 10px;
+    }
+
+    .ProjectDescription__first{
+        text-decoration: none;
+        font-size: 12px;
+        color: #878787;
+        font-weight: lighter;
+    }
+
+    .ProjectDescription__second {
+        color: #2E2E2E;
+        font-size: 27px;
+        font-weight: bold;
+    }
+
+    .ProjectDescription__third{
+        color: #2E2E2E;
+        font-size: 17px;
+        font-weight: lighter;
+    }
+
+    .go-to{
+        color: #2E2E2E;
+        font-size: 17px;
+        text-decoration: none
+    }
+
+    .arrow-img{
+        padding-left: 20px;
+    }
+}

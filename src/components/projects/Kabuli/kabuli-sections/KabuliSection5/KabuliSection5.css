@@ -1,1 +1,22 @@
-.KabuliSection5 {}
+.kabuli-section-5__img-width {
+    width: 360px;
+}
+
+.kabuli-section-5__shadow{
+    box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.kabuli-section-5__border-radius{
+    border-radius: 30px;
+}
+
+@media screen and (max-width: 767px) {
+    .kabuli-section-5__img-width {
+        width: 130px;
+    }
+
+    .kabuli-section-5__border-radius{
+        border-radius: 12px;
+    }
+}
+

@@ -12,3 +12,7 @@
     width: 1003px;
     height: 1281px;
 }
+
+.padding-divs-bottom-40 > div{
+    padding-bottom: 40px;
+}

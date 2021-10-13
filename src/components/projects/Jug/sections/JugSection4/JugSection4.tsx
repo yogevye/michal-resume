@@ -49,7 +49,7 @@ const bullets2 = [
 const goalsDescription = 'After getting to know the users and understanding their work method, struggles and dreams from the new app, the PO and I set goals for the new app to achieve.'
 
 const JugSection4 = () => (
-    <div className="flex-column">
+    <div className="flex-column padding-divs-bottom-40">
         <div className="flex-column">
             <h1 className="font-50 font-weight-bold">Challenges</h1>
             <ul className="bullets-padding-40 redesigning-bullets font-25">
@@ -63,7 +63,7 @@ const JugSection4 = () => (
             </ul>
         </div>
         <div className="flex-column">
-            <h1 className="font-50 font-weight-bold">Challenges</h1>
+            <h1 className="font-50 font-weight-bold">Goals</h1>
             <p>
                 {goalsDescription}
             </p>

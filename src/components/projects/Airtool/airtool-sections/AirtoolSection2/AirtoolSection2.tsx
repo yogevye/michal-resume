@@ -6,7 +6,7 @@ const redesigningText = 'Our team had a mission to replace the existing system, 
     'Before even getting to know the users, I drilled down into their experiences with this old software, to see it was:'
 
 const AirtoolSection2 = () => (
-  <div className="AirtoolRedesigning">
+  <div className="AirtoolRedesigning font-25">
       <h1>
           Redesigning
       </h1>
@@ -20,10 +20,6 @@ const AirtoolSection2 = () => (
               <li>Users could “trick” the former system in order to break IAF safety rules.</li>
           </ul>
       </span>
-      <div className="redesigning-images">
-          <img src={RedesigningImage}/>
-          <img src={RedesigningImage}/>
-      </div>
   </div>
 );
 

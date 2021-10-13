@@ -8,6 +8,22 @@
 }
 
 .middle-img-size{
-    width: 32px;
     height: 32px;
+}
+
+.section5_arrow{
+    padding: 10px 325px 10px 10px;
+    height: 43px;
+    align-self: flex-end;
+}
+
+@media screen and (max-width: 767px) {
+    .middle-img-size{
+        height: 21px;
+    }
+
+    .section5_arrow{
+        height: 25px;
+        padding: 10px 50px 10px 10px;
+    }
 }

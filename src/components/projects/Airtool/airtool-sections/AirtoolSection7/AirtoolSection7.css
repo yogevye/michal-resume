@@ -1,1 +1,26 @@
-.AirtoolSection7 {}
+.section-7__img-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+
+.section-7__img{
+    width: 580px;
+}
+
+@media screen and (max-width: 767px) {
+    .section-7__img-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-7__img-container > div:not(:last-child) {
+        padding-bottom: 30px;
+    }
+
+    .section-7__img{
+        width: 100%;
+    }
+}

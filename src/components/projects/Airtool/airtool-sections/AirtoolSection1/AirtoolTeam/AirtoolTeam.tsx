@@ -7,10 +7,10 @@ const teamTitle = 'TEAM';
 
 const AirtoolTeam = () => (
   <div className="AirtoolTeam">
-      <h1 className="airtool-team-title">
+      <h1 className="airtool-team-title font-25">
           {teamTitle}
       </h1>
-      <ul className="team-bullet-points">
+      <ul className="team-bullet-points font-25">
           <li>User representative</li>
           <li>Architect</li>
           <li>Software team leader</li>

@@ -1,1 +1,9 @@
-.JugSection3 {}
+.jug-section-3_img {
+    width: 917px;
+}
+
+@media screen and (max-width: 767px) {
+    .jug-section-3_img {
+        width: 100%;
+    }
+}

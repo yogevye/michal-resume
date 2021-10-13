@@ -9,7 +9,8 @@ import KabuliSection6 from "./kabuli-sections/KabuliSection6/KabuliSection6";
 
 const sections = [
     {
-        component: KabuliSection1
+        component: KabuliSection1,
+        backgroundColor: undefined,
     },
     {
         component: KabuliSection2,
@@ -27,20 +28,20 @@ const sections = [
     },
     {
         component: KabuliSection6,
-        backgroundColor: 'background-color-F9DF90'
+        backgroundColor: 'background-color-F2F3F5'
     }
 ];
 
 // @ts-ignore
 const Kabuli = ({projectLink}) => (
-    <div className="flex-column padding-sections-bottom padding-sections-top full-width-capacity align-items-center">
+    <div className="project-section-container">
         {sections.map(currSection => {
             const Component = currSection.component;
-            let className = 'flex-row full-width-capacity justify-content-center ';
+            let className = 'project-content-sections-wrapper full-width-capacity ';
             className+= currSection.backgroundColor ? currSection.backgroundColor : '';
             return (
                 <div className={className}>
-                    <div className="flex-row project-content-width">
+                    <div className="project-content-container">
                         <Component/>
                     </div>
                 </div>

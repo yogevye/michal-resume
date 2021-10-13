@@ -200,74 +200,74 @@ const StartlightSection5 = () => (
             <h1>Designing a solution</h1>
             <h2>Targeting the top goal - map view</h2>
         </div>
-        <div className="flex-column sections padding-divs-bottom-50">
+        <div className="flex-column sections padding-divs-bottom-40">
             <div className="flex-column first-section">
                 <ColoredHeadline text={section1.title}/>
                 <Paragraph paragraph={section1.p1}></Paragraph>
                 <div className="flex-row justify-content-center img-padding">
-                    <img src={img11}/>
+                    <img className="img-phone-full-capacity" src={img11}/>
                 </div>
                 <Paragraph paragraph={section1.p2}></Paragraph>
                 <div className="flex-column align-items-center img-padding">
-                    <img src={img12}/>
-                    <img src={arrowLeft}/>
+                    <img className="img-phone-full-capacity" src={img12}/>
+                    <img className="section5_arrow" src={arrowLeft}/>
                     <div className="flex-row img1DesWidth">
                         <Paragraph paragraph={section1.pic2Description}/>
                     </div>
                 </div>
                 <Paragraph paragraph={section1.p3}></Paragraph>
                 <div className="flex-row justify-content-center img-padding">
-                    <img src={img13}/>
+                    <img className="img-phone-full-capacity" src={img13}/>
                 </div>
                 <div className="flex-column align-items-center img-padding">
                     <h4>Furthest zoom level</h4>
-                    <img src={img14}/>
+                    <img className="img-phone-full-capacity" src={img14}/>
                 </div>
                 <div className="flex-row justify-content-center">
                     <img className="middle-img-size" src={middleImg}/>
                 </div>
                 <div className="flex-column align-items-center img-padding">
                     <h4>Medium zoom level</h4>
-                    <img src={img15}/>
+                    <img className="img-phone-full-capacity" src={img15}/>
                 </div>
                 <div className="flex-row justify-content-center">
                     <img className="middle-img-size" src={middleImg}/>
                 </div>
                 <div className="flex-column align-items-center img-padding">
                     <h4>Closest zoom level</h4>
-                    <img src={img16}/>
+                    <img className="img-phone-full-capacity" src={img16}/>
                 </div>
             </div>
             <div className="flex-column second-section">
                 <ColoredHeadline text={section2.title}/>
                 <Paragraph paragraph={section2.p1}/>
                 <div className="flex-row justify-content-center img-padding">
-                    <img src={img21}/>
+                    <img className="img-phone-full-capacity" src={img21}/>
                 </div>
                 <div className="flex-row justify-content-center img-padding">
-                    <img src={img22}/>
+                    <img className="img-phone-full-capacity" src={img22}/>
                 </div>
                 <Paragraph paragraph={section2.p2}/>
                 <div className="flex-row justify-content-center img-padding">
-                    <img src={img23}/>
+                    <img className="img-phone-full-capacity" src={img23}/>
                 </div>
                 <Paragraph paragraph={section2.p3}/>
                 <div className="flex-row justify-content-center img-padding">
-                    <img src={img24}/>
+                    <img className="img-phone-full-capacity" src={img24}/>
                 </div>
                 <div className="flex-row justify-content-center img-padding">
-                    <img src={img25}/>
+                    <img className="img-phone-full-capacity" src={img25}/>
                 </div>
             </div>
             <div className="flex-column second-section">
                 <ColoredHeadline text={section2.title}/>
                 <Paragraph paragraph={section3.p1}/>
                 <div className="flex-row justify-content-center img-padding">
-                    <img src={img31}/>
+                    <img className="img-phone-full-capacity" src={img31}/>
                 </div>
                 <Paragraph paragraph={section3.p2}/>
                 <div className="flex-row justify-content-center img-padding">
-                    <img src={img32}/>
+                    <img className="img-phone-full-capacity" src={img32}/>
                 </div>
                 <Paragraph paragraph={section3.p3}/>
             </div>

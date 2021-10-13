@@ -29,13 +29,15 @@ const AirtoolSection4 = () => {
         <div className="flex-column font-25 font-color-3F3939">
             <h1 className="new-line font-50 bold-text">{sectionHeader}</h1>
             <div className="flex-row justify-content-center">
-                <div className="width-982 flex-column padding-bottom-40">
+                <div className="section4__container">
                     {sections.map((section) => (
                         <div className="flex-row padding-bottom-40">
-                            <div className="flex-column width-837 height-196 background-color-green border-radius-22 padding-content-30 space-between">
-                                <span className="new-line font-20">{section.index }</span>
-                                <span className="new-line font-25 font-weight-bolder">{section.title }</span>
-                                <span className="new-line font-20">{section.description }</span>
+                            <div className="section4__container-2">
+                                <div className="flex-column section4__container-2-content">
+                                    <span className="new-line font-20">{section.index }</span>
+                                    <span className="new-line font-25 font-weight-bolder">{section.title }</span>
+                                    <span className="new-line font-20">{section.description }</span>
+                                </div>
                             </div>
                         </div>
                     ))}

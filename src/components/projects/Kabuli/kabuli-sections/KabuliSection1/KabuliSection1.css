@@ -1,4 +1,8 @@
-.KabuliSection1 {}
+.kabuli-section-1_overview-header{
+    font-size: 25px;
+    color: #878787;
+    font-weight: normal;
+}
 
 .balloonsImg{
     width: 332px;
@@ -22,4 +26,28 @@
 .post-title {
     font-weight: bold;
     font-size: 200%
+}
+
+.kabuli-section-1_baloons-web{
+    display: flex;
+    flex-direction: column;
+}
+
+.kabuli-section-1_baloons-phone{
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    .kabuli-section-1_overview-header{
+        font-size: 17px;
+    }
+
+    .kabuli-section-1_baloons-web{
+        display: none;
+    }
+
+    .kabuli-section-1_baloons-phone{
+        display: flex;
+        flex-direction: column;
+    }
 }

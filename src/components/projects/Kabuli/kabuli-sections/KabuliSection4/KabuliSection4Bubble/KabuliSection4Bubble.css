@@ -2,3 +2,10 @@
     width: 837px;
     height: 164px;
 }
+
+@media screen and (max-width: 767px) {
+    .bubble-size {
+        width: 100%;
+        height: initial;
+    }
+}

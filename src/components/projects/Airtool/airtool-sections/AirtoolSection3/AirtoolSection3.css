@@ -1,0 +1,38 @@
+.section3_bubble{
+    width: 982px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+.bubble{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 120px;
+    background-color: #B6DDDF;
+    font-size: 30px;
+    border-radius: 22px;
+}
+
+@media screen and (max-width: 767px) {
+    .section3_bubble{
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+
+    .section3_bubble > div{
+        margin: 5px;
+    }
+
+    .bubble {
+        width: 146px;
+        height: 80px;
+        border-radius: 13px;
+        font-size: 17px;
+    }
+}

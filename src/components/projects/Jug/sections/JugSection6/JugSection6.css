@@ -1,0 +1,13 @@
+.color-img{
+
+}
+
+@media screen and (max-width: 767px) {
+    .jug-section-6_logo-img{
+        width: 35px;
+    }
+
+    .jug-section-6_color-img{
+        width: 150px;
+    }
+}

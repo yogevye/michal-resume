@@ -10,6 +10,7 @@ import JugSection6 from "./sections/JugSection6/JugSection6";
 const sections = [
     {
         component: JugSection1,
+        backgroundColor: undefined
     },
     {
         component: JugSection2,
@@ -33,14 +34,14 @@ const sections = [
 
 // @ts-ignore
 const Jug = ({projectLink}) => (
-    <div className="flex-column padding-sections-bottom padding-sections-top full-width-capacity align-items-center">
+    <div className="project-section-container">
         {sections.map(currSection => {
             const Component = currSection.component;
-            let className = 'flex-row full-width-capacity justify-content-center ';
+            let className = 'project-content-sections-wrapper full-width-capacity ';
             className+= currSection.backgroundColor ? currSection.backgroundColor : '';
             return (
                 <div className={className}>
-                    <div className="flex-row project-content-width">
+                    <div className="project-content-container">
                         <Component/>
                     </div>
                 </div>
