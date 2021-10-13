@@ -4,6 +4,8 @@ import nameLogo from '../../images/name-logo.svg';
 import {Link} from "react-router-dom";
 import menuLogo from '../../images/menu.svg'
 import useDocumentScrollThrottled from '../../utils/useDocumentScrollThrottled';
+// @ts-ignore
+import Pdf from '../../images/Michal Amrami CV.pdf';
 
 
 // @ts-ignore
@@ -41,9 +43,13 @@ const Header = ({selectedNavbarLink, currentLinkName, basicLinks}) => {
 
             <nav className="nav">
                     {basicLinks.map((basicLink: {link: string, title: string}) => {
-                        return (
-                            <Link id={basicLink.title} onClick={selectedNavbarLink} className={'nav__link' + (currentLinkName === basicLink.title ? ' selected' : '')} to={basicLink.link}>{basicLink.title}</Link>
-                        )
+                        if(basicLink.title === 'RESUME'){
+                            return (<a href = {Pdf} target = "_blank" onClick={selectedNavbarLink} className={'nav__link' + (currentLinkName === basicLink.title ? ' selected' : '')}> {basicLink.title} </a>)
+                        } else {
+                            return (
+                                <Link id={basicLink.title} onClick={selectedNavbarLink} className={'nav__link' + (currentLinkName === basicLink.title ? ' selected' : '')} to={basicLink.link}>{basicLink.title}</Link>
+                            )
+                        }
                     })}
                 </nav>
             </div>

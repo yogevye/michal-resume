@@ -2,7 +2,7 @@
     width: 917px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1225px) {
     .jug-section-3_img {
         width: 100%;
     }

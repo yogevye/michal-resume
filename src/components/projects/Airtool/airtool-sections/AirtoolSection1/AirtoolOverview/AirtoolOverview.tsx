@@ -1,5 +1,6 @@
 import React from 'react';
 import './AirtoolOverview.css';
+import emoji from '../../../../../../images/projects/content/airtool/section 1/silence_emoji.svg'
 
 const title = 'OVERVIEW';
 const overiewText = 'AIRTOOL allows aircraft mechanics in the Israeli Air Force to fastly issue and \n' +
@@ -19,9 +20,13 @@ const AirtoolOverview = () => (
       <p className="new-line font-25">
           <span className="bold-text"> Fun fact </span> - if even 1 tool is missing,<mark> not a single plane can take off! </mark>
       </p>
-      <p className="new-line airtool-disclamer">
-          {disclamer}
-      </p>
+      <div className="AirtoolOverview__disclamer">
+          <img className="emoji" src={emoji}/>
+          <p className="new-line airtool-disclamer">
+              {disclamer}
+          </p>
+      </div>
+
   </div>
 );
 

@@ -10,7 +10,7 @@
     justify-content: space-between;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1225px) {
     .new-line{
         white-space: initial;
     }

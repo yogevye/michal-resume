@@ -48,7 +48,7 @@
     font-family: "titillium web";
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1024px) {
     .Intro {
         margin-left: 20px;
         margin-right: 20px;
@@ -76,5 +76,9 @@
 
     .semi-title{
         font-size: 25px;
+    }
+
+    .description-container p{
+        line-height: initial;
     }
 }

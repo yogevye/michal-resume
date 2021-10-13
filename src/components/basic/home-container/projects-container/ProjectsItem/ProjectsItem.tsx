@@ -22,7 +22,7 @@ const ProjectsItem = ({projectLink}) => (
                     </div>
                     <div className="flex-row align-items-center">
                         <span className="go-to">{viewCaseStudyMessage}</span>
-                        <img className="arrow-img" src={arrowImg}/>
+                        <img className="arrow-img-1" src={arrowImg}/>
                     </div>
                 </div>
             </div>

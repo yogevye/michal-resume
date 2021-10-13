@@ -9,7 +9,7 @@
     width: 580px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1225px) {
     .section-7__img-container{
         flex-direction: column;
         justify-content: center;

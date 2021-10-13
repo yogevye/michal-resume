@@ -2,8 +2,13 @@
     padding-bottom: 40px;
 }
 
-@media screen and (max-width: 767px) {
+.arrow-img{
+    padding-top: 5px;
+}
+
+@media screen and (max-width: 1225px) {
     .arrow-img{
-        height: 20px;
+        padding-top: 10px;
+        height: 10px;
     }
 }

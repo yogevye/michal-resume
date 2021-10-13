@@ -10,7 +10,7 @@
     width: 276px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1024px) {
     .projects-links-logo{
         height: 20px;
         width: 215px;

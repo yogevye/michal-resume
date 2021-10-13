@@ -36,7 +36,7 @@
     align-items: center;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1225px) {
     .project-header{
         height: 300px;
         width: 100%;

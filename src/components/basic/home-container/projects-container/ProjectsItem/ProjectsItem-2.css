@@ -14,12 +14,28 @@
     border-radius: 14px;
 }
 
+.ProjectsItem:hover {
+    transition-duration: 0.5s;
+    transform: scale(1.04);
+}
+
+.arrow-img-1{
+    padding-top: 5px;
+    padding-left: 20px;
+}
+
+.ProjectsItem:hover .arrow-img-1{
+    transition-duration: 0.3s;
+    transform: translateX(10px);
+}
+
 .project-log{
     height: 100%;
     width: 735px;
     border-bottom-left-radius: 14px;
     border-top-left-radius: 14px;
 }
+
 
 .CardContainer{
     display: flex;
@@ -71,11 +87,8 @@
     text-decoration: none
 }
 
-.arrow-img{
-    padding-left: 20px;
-}
 
-@media screen and (max-width: 767px)  {
+@media screen and (max-width: 1024px)  {
     .ProjectsItem{
         flex-flow: column wrap;
         justify-content: center;
@@ -124,7 +137,9 @@
         text-decoration: none
     }
 
-    .arrow-img{
+    .arrow-img-1{
         padding-left: 20px;
+        padding-top: 5px;
+        width: 10px;
     }
 }

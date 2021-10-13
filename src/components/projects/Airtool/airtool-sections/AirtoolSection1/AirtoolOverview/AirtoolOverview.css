@@ -23,7 +23,21 @@
     font-weight: normal;
 }
 
-@media screen and (max-width: 767px) {
+.AirtoolOverview__disclamer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    left: -55px;
+}
+
+.emoji{
+    padding-bottom: 15px;
+   margin-right: 20px;
+    /*height: 20px;*/
+}
+
+@media screen and (max-width: 1225px) {
     .airtool-disclamer {
         font-size: 13px;
     }
@@ -31,4 +45,20 @@
     .new-line{
         white-space: initial;
     }
+
+    .AirtoolOverview__disclamer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: initial;
+        left: initial;
+    }
+
+    .emoji{
+        padding-bottom: initial;
+        margin-right: initial;
+        align-self: flex-start;
+        width: 20px;
+    }
+
 }

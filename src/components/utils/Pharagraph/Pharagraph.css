@@ -2,7 +2,7 @@
     font-size: 25px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1024px) {
     .font-25 {
         font-size: 17px;
     }

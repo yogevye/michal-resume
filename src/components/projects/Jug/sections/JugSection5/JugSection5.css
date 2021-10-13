@@ -12,7 +12,7 @@
     padding-top: 50px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1225px) {
     .jug-section-5__images-wrapper-1{
         flex-direction: column;
         justify-content: initial;

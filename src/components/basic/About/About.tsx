@@ -1,6 +1,6 @@
 import React from 'react';
 import './About.css';
-import profilePic from '../../../images/profilePic.svg';
+import profilePic from '../../../images/about-me-pic.jpg';
 
 const paragraphs = [`
                 Throughout my life I repeatedly chose art as a way to express myself.\n
@@ -27,15 +27,15 @@ const paragraphs = [`
 `];
 
 const About = () => (
-  <div className="about-wrap">
+  <div className="flex-row justify-content-center">
     <div className="About">
-        <div className="profile-pic" style={{backgroundImage: 'url(' + profilePic + ')'}}/>
+        <img className="profile-pic padding-bottom-40" src={profilePic}/>
         <div className="about-text-wrap">
-            <div className="about-headline">
+            <h1 className="about-headline font-50">
                 A little bit about myself.
-            </div>
+            </h1>
             {paragraphs.map((paragraph) => (
-                <p className="about-paragraph new-line">
+                <p className="about-paragraph new-line font-25">
                     {paragraph}
                 </p>
             ))}

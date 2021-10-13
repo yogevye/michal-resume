@@ -2,7 +2,7 @@
     padding-bottom: 40px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1225px) {
     .section-5-bullets li:not(:last-child) {
         padding-bottom: 10px;
     }

@@ -10,7 +10,7 @@
     border-radius: 30px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1225px) {
     .kabuli-section-5__img-width {
         width: 130px;
     }

@@ -4,7 +4,7 @@ import img1 from '../../../../../images/projects/content/airtool/section7/img1.s
 import img2 from '../../../../../images/projects/content/airtool/section7/img2.svg'
 import Paragraph from "../../../../utils/Pharagraph/Paragraph";
 
-const sectionHeader = 'Back to the field - \n' +
+const sectionHeader = 'Back to the field - ' +
     'usability testing';
 const description = 'After making wireframes for both options, I printed out screens on paper and went testing them with machanins \n' +
     'in two bases. I tested one user at a time by giving them tasks and watching them perform it on the “app”.\n' +
