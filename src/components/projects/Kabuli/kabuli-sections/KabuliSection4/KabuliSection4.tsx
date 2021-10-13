@@ -60,11 +60,11 @@ const KabuliSection4 = () => (
             </div>
             <Paragraph paragraph={paragraph2}/>
             <div className="flex-column align-items-center padding-divs-bottom-40 padding-bottom-40">
-                <img className="img-phone-full-capacity" src={image1}/>
-                <img className="img-phone-full-capacity" src={image2}/>
+                <img alt="51" className="img-phone-full-capacity" src={image1}/>
+                <img alt="52" className="img-phone-full-capacity" src={image2}/>
             </div>
             <Paragraph paragraph={paragraph3}/>
-            <img className="img-phone-full-capacity" src={image3}/>
+            <img alt="53" className="img-phone-full-capacity" src={image3}/>
         </div>
     </div>
 );

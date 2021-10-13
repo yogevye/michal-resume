@@ -11,7 +11,7 @@ const KabuliSection6 = () => (
             <h1 className="font-50 font-weight-bold">Results</h1>
             <p>In 2 weeks, our team developed a working MVP that was launched and used.</p>
             <div className="flex-row justify-content-center img-padding">
-                <img className="img-phone-full-capacity" src={image1}/>
+                <img alt="yy" className="img-phone-full-capacity" src={image1}/>
             </div>
             <p>{p2}</p>
         </div>

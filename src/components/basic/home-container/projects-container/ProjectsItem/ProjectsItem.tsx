@@ -12,7 +12,7 @@ const ProjectsItem = ({projectLink}) => (
     <Link to={projectLink.link} className="ProjectLink">
         <div className="ProjectsItem">
             {/*<div className="ProjectLogoContainer" style={{backgroundImage: 'url(' + projectLink.logo + ')'}}/>*/}
-                <img className="project-log" src={projectLink.logo}/>
+                <img alt="10" className="project-log" src={projectLink.logo}/>
             <div className="CardContainer">
                 <div className="cardContent">
                     <div className="ProjectDescription">
@@ -22,7 +22,7 @@ const ProjectsItem = ({projectLink}) => (
                     </div>
                     <div className="flex-row align-items-center">
                         <span className="go-to">{viewCaseStudyMessage}</span>
-                        <img className="arrow-img-1" src={arrowImg}/>
+                        <img alt="11" className="arrow-img-1" src={arrowImg}/>
                     </div>
                 </div>
             </div>

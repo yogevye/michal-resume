@@ -15,7 +15,7 @@ const JugSection5Bubbles = ({params}) => (
             <div className="flex-row full-width-capacity justify-content-center">
                     {params.imgs.map((imgSrc: string | undefined) => (
                         <div>
-                            <img src={imgSrc}/>
+                            <img alt="6" src={imgSrc}/>
                         </div>
 
                     ))}

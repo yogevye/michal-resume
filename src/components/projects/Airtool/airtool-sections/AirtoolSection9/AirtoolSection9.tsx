@@ -82,7 +82,7 @@ const AirtoolSection9 = () => (
                     {dashboardText3}
                 </p>
                 <div className="flex-row justify-content-center">
-                    <img className="img-phone-full-capacity" src={dashboardImg}/>
+                    <img alt="16" className="img-phone-full-capacity" src={dashboardImg}/>
                 </div>
             </div>
             <div className="flex-column">
@@ -95,16 +95,16 @@ const AirtoolSection9 = () => (
                     {scanningText5}
                 </p>
                 <div className="flex-column align-items-center scanning-container">
-                    <img className="img-phone-full-capacity" src={scanningImg}/>
-                    <img className="arrow-img" src={arrowImg}/>
-                    <img className="img-phone-full-capacity" src={scanning2Img}/>
+                    <img alt="17" className="img-phone-full-capacity" src={scanningImg}/>
+                    <img alt="18" className="arrow-img" src={arrowImg}/>
+                    <img alt="19" className="img-phone-full-capacity" src={scanning2Img}/>
                 </div>
             </div>
             <div className="flex-column">
                 <h2 className="font-40 font-weight-bolder">Shopping cart experience</h2>
                 <Paragraph paragraph={shoppingText}/>
                 <div className="flex-column align-items-center scanning-container">
-                    <img className="img-phone-full-capacity" src={shpppingImg}/>
+                    <img alt="20" className="img-phone-full-capacity" src={shpppingImg}/>
                 </div>
             </div>
             <div className="flex-column">
@@ -112,10 +112,10 @@ const AirtoolSection9 = () => (
                 <Paragraph paragraph={ReturnByUserText}/>
                 <div className="flex-column align-items-center scanning-container">
                     <div className="flex-row">
-                        <img className="img-phone-full-capacity" src={returnByUser1}/>
+                        <img alt="21" className="img-phone-full-capacity" src={returnByUser1}/>
                     </div>
                     <div className="flex-row">
-                        <img className="img-phone-full-capacity" src={returnByUser2}/>
+                        <img alt="22" className="img-phone-full-capacity" src={returnByUser2}/>
                     </div>
                 </div>
             </div>

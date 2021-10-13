@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import './Airtool.css';
 import AirtoolSection1 from "./airtool-sections/AirtoolSection1/AirtoolSection1";
 import AirtoolSection2 from "./airtool-sections/AirtoolSection2/AirtoolSection2";

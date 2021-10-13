@@ -13,18 +13,9 @@ const JugSection3 = () => (
             {description}
         </span>
             <div className="flex-column padding-img-bottom-40 align-items-center jug-section-3_img-wrapper">
-                    <img className="jug-section-3_img" src={img1}/>
-                    <img className="jug-section-3_img" src={img2}/>
+                    <img alt="23" className="jug-section-3_img" src={img1}/>
+                    <img alt="24" className="jug-section-3_img" src={img2}/>
             </div>
-
-        {/*<div className="flex-column align-items-center padding-divs-bottom-40">*/}
-        {/*    <div className="flex-row justify-content-center">*/}
-        {/*        <img src={img1}/>*/}
-        {/*    </div>*/}
-        {/*    <div className="flex-row justify-content-center">*/}
-        {/*        <img src={img2}/>*/}
-        {/*    </div>*/}
-        {/*</div>*/}
     </div>
 );
 

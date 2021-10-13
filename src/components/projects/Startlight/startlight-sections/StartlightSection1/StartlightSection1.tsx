@@ -45,7 +45,7 @@ const sections = [
             }
         ]
     },
-]
+];
 
 const StartlightSection1 = () => (
     <div className="flex-column padding-divs-bottom-40">
@@ -53,7 +53,7 @@ const StartlightSection1 = () => (
                 <div className="flex-column">
                     <div className="flex-row">
                         <h1 className="font-25 font-color-878787 font-weight-normal dreamTitle">{section.title}</h1>
-                        {section.extraIcon ? <img className="emoji" src={section.extraIcon}/> : null}
+                        {section.extraIcon ? <img  alt="er" className="emoji" src={section.extraIcon}/> : null}
                     </div>
                     <Paragraph paragraph={section.description}/>
                 </div>

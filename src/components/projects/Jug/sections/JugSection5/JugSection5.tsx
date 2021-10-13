@@ -5,10 +5,8 @@ import img12 from '../../../../../images/projects/content/jug/section-5/img-1-2.
 import img21 from '../../../../../images/projects/content/jug/section-5/img-2-1.svg';
 import img31 from '../../../../../images/projects/content/jug/section-5/img-3-1.svg';
 import img32 from '../../../../../images/projects/content/jug/section-5/img-3-2.svg';
-import JugSection5Bubbles from "./JugSection5Bubbles/JugSection5Bubbles";
 import ColoredHeadline from "../../../../utils/ColoredHeadline/ColoredHeadline";
 import Paragraph from "../../../../utils/Pharagraph/Paragraph";
-import middleImg from "../../../../../images/projects/content/startlight/section-5/img-1-middle.svg";
 
 const title = 'Ideation and\n' +
     'wireframing';
@@ -81,23 +79,23 @@ const JugSection5 = () => (
                 <ColoredHeadline text={section1.title} backgroudColor="background-color-E1D6F0"/>
                 <Paragraph paragraph={section1.p1}/>
                 <div className="jug-section-5__images-wrapper-1">
-                    <img className="jug-section-5__img" src={img11}/>
-                    <img className="jug-section-5__img" src={img12}/>
+                    <img alt="1" className="jug-section-5__img" src={img11}/>
+                    <img alt="2" className="jug-section-5__img" src={img12}/>
                 </div>
             </div>
             <div className="flex-column second-section">
                 <ColoredHeadline text={section2.title}  backgroudColor="background-color-E1D6F0"/>
                 <Paragraph paragraph={section2.p1}/>
                 <div className="flex-row justify-content-center">
-                    <img className="jug-section-5__img" src={img21}/>
+                    <img alt="3" className="jug-section-5__img" src={img21}/>
                 </div>
             </div>
             <div className="flex-column third-section">
                 <ColoredHeadline text={section3.title}  backgroudColor="background-color-E1D6F0"/>
                 <Paragraph paragraph={section3.p1}/>
                 <div className="jug-section-5__images-wrapper-1">
-                    <img className="jug-section-5__img" src={img31}/>
-                    <img className="jug-section-5__img" src={img32}/>
+                    <img alt="4" className="jug-section-5__img" src={img31}/>
+                    <img alt="5" className="jug-section-5__img" src={img32}/>
                 </div>
             </div>
         </div>

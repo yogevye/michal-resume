@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import './ProjectShortcut.css';
 import logo from "../../../images/more-projects-logo.svg";
 import {Link} from "react-router-dom";

@@ -30,7 +30,7 @@ import AirToolLink from './images/projects/links/airtool-link.svg'
 import JugLinklLink from './images/projects/links/jug-link.svg'
 import kabuliLink from './images/projects/links/kabuli-link.svg'
 import StartligtLink from './images/projects/links/startligt-link.svg'
-import linkdin from './images/linkdin.svg'
+import linkedIn from './images/linkdin.svg'
 
 const BASIC_LINKS = [
     {
@@ -197,7 +197,7 @@ function App() {
                           <a href = "mailto: michal.d.amrami@gmail.com">michal.d.amrami@gmail.com</a>
                       </section>
                       <section className="font-40 font-weight-bold">
-                          <a href="https://www.linkedin.com/in/michal-amrami/" target="_blank"> <img src={linkdin}/> </a>
+                          <a href="https://www.linkedin.com/in/michal-amrami/"> <img alt="likedIn" src={linkedIn}/> </a>
                       </section>
                       <section className="footer_mail">
                           0547975122

@@ -23,6 +23,7 @@ function useDocumentScrollThrottled(callback: any) {
 
         return () =>
             window.removeEventListener('scroll', handleDocumentScrollThrottled);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 }
 

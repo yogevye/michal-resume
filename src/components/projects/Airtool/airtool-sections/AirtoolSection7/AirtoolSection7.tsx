@@ -41,11 +41,11 @@ const AirtoolSection7 = () => (
         </p>
         <div className="section-7__img-container">
             <div className="flex-column">
-                <img className="section-7__img" src={img1}/>
+                <img alt="13" className="section-7__img" src={img1}/>
                 <span className="font-20 font-color-656565">Usability test option A</span>
             </div>
             <div className="flex-column">
-                <img className="section-7__img" src={img2}/>
+                <img alt="14" className="section-7__img" src={img2}/>
                 <span className="font-20 font-color-656565">Usability test option B</span>
             </div>
         </div>

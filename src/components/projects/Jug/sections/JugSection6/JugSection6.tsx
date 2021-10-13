@@ -104,11 +104,11 @@ const JugSection6 = () => (
             <div className="flex-column padding-divs-bottom-20">
                 <div className="flex-row align-items-center">
                     <span className="padding-right-20 font-25">Logo</span>
-                    <img className="jug-section-6_logo-img" src={logo}/>
+                    <img alt="30" className="jug-section-6_logo-img" src={logo}/>
                 </div>
                 <div className="flex-row align-items-center">
                     <span className="padding-right-20 font-25">Color palette</span>
-                    <img className="jug-section-6_color-img" src={colors}/>
+                    <img alt="31" className="jug-section-6_color-img" src={colors}/>
                 </div>
             </div>
         </div>
@@ -116,10 +116,10 @@ const JugSection6 = () => (
             <h2>Time line</h2>
             <Paragraph paragraph={timelineP1}/>
             <div className="flex-row justify-content-center img-padding">
-                <img className="img-phone-full-capacity" src={img11}/>
+                <img alt="33" className="img-phone-full-capacity" src={img11}/>
             </div>
             <div className="flex-row justify-content-center img-padding">
-                <img className="img-phone-full-capacity" src={img12}/>
+                <img alt="32" className="img-phone-full-capacity" src={img12}/>
             </div>
         </div>
         <div className="flex-column">
@@ -127,19 +127,19 @@ const JugSection6 = () => (
             <Paragraph paragraph={timelineP2}/>
             <div className="flex-column align-items-center img-padding">
                 <h4>Select a year</h4>
-                <img className="img-phone-full-capacity" src={img21}/>
+                <img alt="34" className="img-phone-full-capacity" src={img21}/>
             </div>
             <div className="flex-column align-items-center img-padding">
                 <h4>Select a month</h4>
-                <img className="img-phone-full-capacity" src={img22}/>
+                <img alt="35" className="img-phone-full-capacity" src={img22}/>
             </div>
             <div className="flex-column align-items-center img-padding">
                 <h4>Select a day</h4>
-                <img className="img-phone-full-capacity" src={img23}/>
+                <img alt="36" className="img-phone-full-capacity" src={img23}/>
             </div>
             <div className="flex-column align-items-center img-padding">
                 <h4>Select an hour</h4>
-                <img className="img-phone-full-capacity" src={img24}/>
+                <img alt="37" className="img-phone-full-capacity" src={img24}/>
             </div>
         </div>
         <div className="Saving and viewing events">
@@ -147,21 +147,21 @@ const JugSection6 = () => (
             <Paragraph paragraph={timelineP3}/>
             <div className="flex-column align-items-center img-padding">
                 <h4>Pick time frame</h4>
-                <img className="img-phone-full-capacity" src={img31}/>
+                <img alt="38" className="img-phone-full-capacity" src={img31}/>
             </div>
             <div className="flex-column align-items-center img-padding">
                 <h4>Create event</h4>
-                <img className="img-phone-full-capacity" src={img32}/>
+                <img alt="39" className="img-phone-full-capacity" src={img32}/>
             </div>
             <div className="flex-row justify-content-center img-padding">
-                <img className="img-phone-full-capacity" src={img33}/>
+                <img alt="40" className="img-phone-full-capacity" src={img33}/>
             </div>
             <div className="flex-column align-items-center img-padding">
                 <h4>Event list</h4>
-                <img className="img-phone-full-capacity" src={img34}/>
+                <img alt="41" className="img-phone-full-capacity" src={img34}/>
             </div>
             <div className="flex-column align-items-center img-padding">
-                <img className="img-phone-full-capacity" src={img35}/>
+                <img alt="42" className="img-phone-full-capacity" src={img35}/>
             </div>
         </div>
 
@@ -169,13 +169,13 @@ const JugSection6 = () => (
             <h2>Story</h2>
             <Paragraph paragraph={timelineP4}/>
             <div className="flex-column align-items-center img-padding">
-                <img className="img-phone-full-capacity" src={img41}/>
+                <img alt="43" className="img-phone-full-capacity" src={img41}/>
             </div>
             <div className="flex-column align-items-center img-padding">
-                <img className="img-phone-full-capacity" src={img42}/>
+                <img alt="44" className="img-phone-full-capacity" src={img42}/>
             </div>
             <div className="flex-column align-items-center img-padding">
-                <img className="img-phone-full-capacity" src={img43}/>
+                <img alt="45" className="img-phone-full-capacity" src={img43}/>
             </div>
         </div>
     </div>

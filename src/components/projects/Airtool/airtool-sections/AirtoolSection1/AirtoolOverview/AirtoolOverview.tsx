@@ -21,7 +21,7 @@ const AirtoolOverview = () => (
           <span className="bold-text"> Fun fact </span> - if even 1 tool is missing,<mark> not a single plane can take off! </mark>
       </p>
       <div className="AirtoolOverview__disclamer">
-          <img className="emoji" src={emoji}/>
+          <img alt="ghhh" className="emoji" src={emoji}/>
           <p className="new-line airtool-disclamer">
               {disclamer}
           </p>

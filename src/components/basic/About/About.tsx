@@ -29,7 +29,7 @@ const paragraphs = [`
 const About = () => (
   <div className="flex-row justify-content-center">
     <div className="About">
-        <img className="profile-pic padding-bottom-40" src={profilePic}/>
+        <img alt="8" className="profile-pic padding-bottom-40" src={profilePic}/>
         <div className="about-text-wrap">
             <h1 className="about-headline font-50">
                 A little bit about myself.

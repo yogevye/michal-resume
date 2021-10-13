@@ -57,11 +57,11 @@ const StartlightSection4 = () => (
         <div className="flex-column padding-divs-bottom-50">
             <div className="flex-column">
                 <Paragraph paragraph={description}/>
-                <img className="section-4_img" src={img1}/>
+                <img alt="y2" className="section-4_img" src={img1}/>
             </div>
             <div className="flex-column">
                 <Paragraph paragraph={description2}/>
-                <img className="section-4_img"  src={img2}/>
+                <img alt="y1" className="section-4_img"  src={img2}/>
             </div>
         </div>
     </div>

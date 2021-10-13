@@ -52,7 +52,7 @@ const AirtoolSection6 = () => (
                         <span className="font-40 font-weight-bolder">{option.title}</span>
                         <span className="font-25 new-line padding-bottom-40">{option.description}</span>
                         <div className="flex-row justify-content-center">
-                            <img className="img-phone-full-capacity" src={option.img}/>
+                            <img alt="12" className="img-phone-full-capacity" src={option.img}/>
                         </div>
                     </div>
                 ))}

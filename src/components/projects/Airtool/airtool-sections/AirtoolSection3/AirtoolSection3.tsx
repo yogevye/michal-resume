@@ -1,6 +1,5 @@
 import React from 'react';
 import './AirtoolSection3.css';
-import usersAgesSection1 from '../../../../../images/projects/content/airtool/users-ages-section/users-ages-section-1.svg';
 import usersLogo from '../../../../../images/projects/content/airtool/users-ages-section/users-logo.svg';
 import environmentLogo from '../../../../../images/projects/content/airtool/users-section/environment-logo.svg';
 import aircraftHangar from '../../../../../images/projects/content/airtool/users-section/aircraft-hangar.svg';
@@ -61,7 +60,7 @@ const AirtoolSection3 = () => (
               </div>
           </div>
           <div className="flex-row justify-content-center">
-              <img className="img-phone-full-capacity" src={usersLogo}/>
+              <img alt="ggg" className="img-phone-full-capacity" src={usersLogo}/>
           </div>
       </div>
 
@@ -77,13 +76,13 @@ const AirtoolSection3 = () => (
       </div>
       <div className="flex-row justify-content-center padding-bottom-10">
           <div className="flex-column">
-              <img className="img-phone-full-capacity" src={environmentLogo}/>
+              <img alt="ggg2" className="img-phone-full-capacity" src={environmentLogo}/>
               <p className="font-20 font-color-878787 font-weight-lighter">Tool room in an aircraft hangar, where Airtool app is used. </p>
           </div>
       </div>
       <div className="flex-row justify-content-center">
           <div className="flex-column">
-              <img className="img-phone-full-capacity" src={aircraftHangar}/>
+              <img alt="ggg4" className="img-phone-full-capacity" src={aircraftHangar}/>
               <p className="font-20 font-color-878787 font-weight-lighter">Aircraft hangar, where the mechanics work.  </p>
           </div>
       </div>

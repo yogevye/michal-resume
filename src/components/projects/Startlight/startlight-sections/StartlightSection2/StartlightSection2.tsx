@@ -51,19 +51,19 @@ const StartlightSection2 = () => (
                     The human flow
                 </h2>
                 <div className="flex-column align-items-center humanFlowContainer padding-img-bottom-20">
-                    <img src={humanFlow1}/>
-                    <img className="airopline" src={bluePlainImg}/>
-                    <img src={humanFlow2}/>
-                    <img className="airopline" src={greenPlainImg}/>
-                    <img src={humanFlow3}/>
+                    <img alt="a1" src={humanFlow1}/>
+                    <img alt="a2" className="airopline" src={bluePlainImg}/>
+                    <img alt="a3" src={humanFlow2}/>
+                    <img alt="a" className="airopline" src={greenPlainImg}/>
+                    <img alt="a5" src={humanFlow3}/>
                 </div>
 
                 <div className="humanFlowPhoneContainer">
-                    <img src={humanPhoneFlow1}/>
-                    <img className="airopline" src={bluePlainImg}/>
-                    <img src={humanPhoneFlow2}/>
-                    <img className="airopline" src={greenPlainImg}/>
-                    <img src={humanPhoneFlow3}/>
+                    <img alt="a6" src={humanPhoneFlow1}/>
+                    <img alt="a7" className="airopline" src={bluePlainImg}/>
+                    <img alt="a8" src={humanPhoneFlow2}/>
+                    <img alt="a9" className="airopline" src={greenPlainImg}/>
+                    <img alt="a10" src={humanPhoneFlow3}/>
                 </div>
             </div>
             <div className="flex-column">
@@ -71,7 +71,7 @@ const StartlightSection2 = () => (
                     Work Environement
                 </h2>
                 <div className="flex-row justify-content-center">
-                    <img className="img-phone-full-capacity" src={officeImg}/>
+                    <img alt="a11" className="img-phone-full-capacity" src={officeImg}/>
                 </div>
             </div>
         </div>

@@ -39,13 +39,13 @@ const Header = ({selectedNavbarLink, showHeaderNav, showNav, scrollToBottom, cur
                 <img className="bar__logo" src={nameLogo} alt="name logo"/>
                 <input type="checkbox" id="inputNavToggle"/>
                 <label className="bar__nav-toggle" htmlFor="inputNavToggle" onClick={showHeaderNav}>
-                    <img className="menu-logo" src={menuLogo}/>
+                    <img alt="7" className="menu-logo" src={menuLogo}/>
                 </label>
 
             <nav className={'nav ' + showNav}>
                     {basicLinks.map((basicLink: {link: string, title: string}) => {
                         if(basicLink.title === 'RESUME'){
-                            return (<a href = {Pdf} target = "_blank" onClick={selectedNavbarLink} className={'nav__link' + (currentLinkName === basicLink.title ? ' selected' : '')}> {basicLink.title} </a>)
+                            return (<a href = {Pdf} rel="noreferrer" target = "_blank" onClick={selectedNavbarLink} className={'nav__link' + (currentLinkName === basicLink.title ? ' selected' : '')}> {basicLink.title} </a>)
                         } else if(basicLink.title === 'CONTACT') {
                             return (<span onClick={scrollToBottom} className={'nav__link' + (currentLinkName === basicLink.title ? ' selected' : '')}> {basicLink.title} </span>)
                         } else{

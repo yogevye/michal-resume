@@ -12,12 +12,12 @@ const StartlightSection3 = () => (
         <h1>Understanding the problem</h1>
         <p>{description}</p>
         <div className="flex-row">
-            <img className="logo-size" src={logo}/>
+            <img alt="w1" className="logo-size" src={logo}/>
             <h3>{text1}</h3>
         </div>
         <div className="flex-row justify-content-center">
-            <img className="section3_img" src={img2}/>
-            <img className="section3_phone_img" src={img2Phone}/>
+            <img alt="w2" className="section3_img" src={img2}/>
+            <img alt="w3" className="section3_phone_img" src={img2Phone}/>
         </div>
     </div>
 );

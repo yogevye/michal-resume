@@ -9,10 +9,6 @@ import comImg6 from '../../../../../images/projects/content/kabuli/section-5/com
 
 import image5 from '../../../../../images/projects/content/kabuli/section-5/img5.svg';
 
-import KabuliSection5SignUp from "./KabuliSection5SignUp/KabuliSection5SignUp";
-import KabuliSectionNewReport from "./KabuliSectionNewReport/KabuliSectionNewReport";
-import KabuliSectionMyReports from "./KabuliSectionMyReports/KabuliSectionMyReports";
-
 const description = 'After mocking up a user journey and the team was busy with the first tasks, I went ahead with the designs. Each \n' +
     'screen was passed along the moment it was finished, so the work could keep going. In the design, I focused on \n' +
     'keeping the theme light and happy. With a heavy topic such a this, it was important to stay away from the \n' +
@@ -72,9 +68,7 @@ const KabuliSection5 = () => (
                             <h2>{semiSection.title}</h2>
                             <p>{semiSection.description}</p>
                             <div className="flex-row justify-content-center padding-bottom-40">
-                                 <img className={className} src={semiSection.img}/>
-
-                                {/*{SemiSectionComponent ? <SemiSectionComponent/> :  <img className="border-radius-35 img-phone-full-capacity" src={semiSection.img}/>}*/}
+                                 <img alt="gg" className={className} src={semiSection.img}/>
                             </div>
                         </div>
                     )
