@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import './App.css';
 import './main.css'
 import {
@@ -47,7 +47,7 @@ const BASIC_LINKS = [
     },
     {
         title: 'CONTACT',
-        link: '/#contact',
+        link: '/CONTACT',
     }
 ];
 
@@ -134,8 +134,9 @@ const LOCAL_STORAGE_CURRENT_LINK = 'routes.currentLink';
 
 function App() {
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    const [state, setState] = useState({currentLinkName: ''});
-    const {currentLinkName} = state;
+    const page = useRef(null);
+    const [state, setState] = useState({currentLinkName: '', showNav: 'hide-nav'});
+    const {currentLinkName, showNav} = state;
 
     useEffect(() => {
         localStorage.setItem(LOCAL_STORAGE_CURRENT_LINK, JSON.stringify(currentLinkName))
@@ -148,15 +149,38 @@ function App() {
         console.log(linkName);
         if(!linkName || linkName === '') return;
         setState((prevState: any) => {
-            return {...prevState, currentLinkName: linkName}
+            return {...prevState, currentLinkName: linkName, showNav: 'hide-nav'}
         });
     }
+
+    function showHeaderNav(e: { target: { id: any; }; }) {
+        // @ts-ignore
+        setState((prevState: any) => {
+            let {showNav: currentShowNav} = prevState;
+            if(currentShowNav === ''){
+                currentShowNav = 'hide-nav';
+            } else {
+                currentShowNav = '';
+            }
+            return {...prevState, showNav: currentShowNav}
+        });
+    }
+
+    const scrollToBottom = () => {
+        setState((prevState: any) => {
+            return {...prevState, showNav: 'hide-nav'}
+        });
+        window.scrollTo({
+            top: document.documentElement.scrollHeight, behavior: "smooth"
+        });
+    };
+
 
   // @ts-ignore
   return (
           <div className='flex-column background-color-fafafa font-family-titillium font-25 font-color-3F3939 App padding-bottom-40'>
               <Router>
-                  <Header selectedNavbarLink = {selectedNavbarLink} currentLinkName={currentLinkName} basicLinks={BASIC_LINKS}/>
+                  <Header selectedNavbarLink = {selectedNavbarLink} showHeaderNav= {showHeaderNav} showNav={showNav} scrollToBottom={scrollToBottom} currentLinkName={currentLinkName} basicLinks={BASIC_LINKS}/>
                   <div className="page-content">
                       <Body projectsLinks={PROJECTS_LINKS} ProjectsComponents={ProjectsComponents}/>
                   </div>

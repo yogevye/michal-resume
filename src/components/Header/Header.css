@@ -66,12 +66,12 @@
     display: none;
 }
 
-#inputNavToggle:checked ~ .nav {
-    display: flex;
-}
+/*#inputNavToggle:checked ~ .nav {*/
+/*    display: flex;*/
+/*}*/
 
 .nav {
-    display: none;
+    display: flex;
     flex-direction: column;
     position: fixed;
     top: var(--bar-height);
@@ -87,6 +87,9 @@
     display: none;
 }
 
+.hide-nav{
+    display: none;
+}
 
 .nav__link {
     display: flex;
