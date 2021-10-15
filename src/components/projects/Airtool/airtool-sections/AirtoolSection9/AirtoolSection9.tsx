@@ -119,7 +119,7 @@ const AirtoolSection9 = () => (
                     </div>
                 </div>
             </div>
-        </div>F
+        </div>
     </div>
 );
 
