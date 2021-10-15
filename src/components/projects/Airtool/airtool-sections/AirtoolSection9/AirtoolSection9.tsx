@@ -1,11 +1,11 @@
 import React from 'react';
 import './AirtoolSection9.css';
-import dashboardImg from '../../../../../images/projects/content/airtool/section9/dashboard1.svg';
+import dashboardImg from '../../../../../images/projects/content/airtool/section9/dashboard1.png';
 import scanningImg from '../../../../../images/projects/content/airtool/section9/scanning1.svg';
 import scanning2Img from '../../../../../images/projects/content/airtool/section9/scanning2.svg';
 import shpppingImg from '../../../../../images/projects/content/airtool/section9/shppping1.svg';
-import returnByUser1 from '../../../../../images/projects/content/airtool/section9/return-by-user-1.svg'
-import returnByUser2 from '../../../../../images/projects/content/airtool/section9/return-by-user-2.svg'
+import returnByUser1 from '../../../../../images/projects/content/airtool/section9/return-by-user-1.png'
+import returnByUser2 from '../../../../../images/projects/content/airtool/section9/return-by-user-2.png'
 import arrowImg from '../../../../../images/arrow-down.svg';
 import Paragraph from "../../../../utils/Pharagraph/Paragraph";
 
@@ -82,7 +82,7 @@ const AirtoolSection9 = () => (
                     {dashboardText3}
                 </p>
                 <div className="flex-row justify-content-center">
-                    <img alt="16" className="img-phone-full-capacity" src={dashboardImg}/>
+                    <img alt="ttttt" className="img-phone-full-capacity" src={dashboardImg}/>
                 </div>
             </div>
             <div className="flex-column">
@@ -119,7 +119,7 @@ const AirtoolSection9 = () => (
                     </div>
                 </div>
             </div>
-        </div>
+        </div>F
     </div>
 );
 

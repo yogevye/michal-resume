@@ -52,7 +52,7 @@ const semiSections = [
     },
     {
         title: 'My reports',
-        description: 'In this page users can view the reports they sent out, be updated on their status and chat through Whatsapp on each specific report with the assigned handler.',
+        description: 'In this page, users can view the reports they sent out, be updated on their status and chat through Whatsapp on each specific report with the assigned handler.',
         img: comImg6,
         alt: 'alt6',
         className: 'kabuli-section-5__img-width'

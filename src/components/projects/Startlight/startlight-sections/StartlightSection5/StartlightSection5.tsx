@@ -25,7 +25,7 @@ const section1 ={
     title: '# 1 - Labels on varying zoom levels',
     p1: [
         {
-            text: 'In order to find the correct way for users the view the map, even at a load that is above average, I had to put my finger\n \n'
+            text: 'In order to find the correct way for users the view the map, even at a load that is above average, I had to put my finger on why scanning the map in the former system was so difficult.\n\n'
         },
         {
             text: 'First, the colors\n',
@@ -99,7 +99,7 @@ const section2 ={
             text: '. Ways to do that:\n\n'
         },
         {
-            text: 'Snack bar on one click',
+            text: 'Snack bar on one click ',
             bold: true,
             fontSize: 'font-30'
         },
@@ -160,7 +160,7 @@ const section3 ={
             bold: true
         },
         {
-            text: ' from the pool. To move the data fields around, users drag and drop into the desired place, they can add, remove and switch locations. Each field that was places is colored for indication and cannot be placed on the label again. Clicking the “Quick Actions” tab or on the component will show the action pool and will function the same in a drag and drop technique, '
+            text: ' from the pool. To move the data fields around, users drag and drop into the desired place, they can add, remove and switch locations. Each field that was placed is colored for indication and cannot be placed on the label again. Clicking the “Quick Actions” tab or on the component will show the action pool and will function the same in a drag and drop technique. '
         }
     ],
     p2: [
@@ -260,7 +260,7 @@ const StartlightSection5 = () => (
                 </div>
             </div>
             <div className="flex-column second-section">
-                <ColoredHeadline text={section2.title}/>
+                <ColoredHeadline text={section3.title}/>
                 <Paragraph paragraph={section3.p1}/>
                 <div className="flex-row justify-content-center img-padding">
                     <img alt="s15" className="img-phone-full-capacity" src={img31}/>

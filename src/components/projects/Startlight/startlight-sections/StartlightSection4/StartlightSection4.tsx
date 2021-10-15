@@ -46,7 +46,7 @@ const description2 = [
         text: '. In addition, creating a “Favorites” panel for joint conversation between people in the shift. Each row is designed as a card, instead of a table row, for dragging rows over and making the app a tool that '
     },
     {
-        text: 'gives users the ability to orgenize their data according to their role.',
+        text: 'gives users the ability to organize their data according to their role.',
         bold: true,
     },
 ];

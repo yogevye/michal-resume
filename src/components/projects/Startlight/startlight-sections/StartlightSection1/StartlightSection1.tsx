@@ -39,9 +39,7 @@ const sections = [
         description: [
             {
                 text: 'The former system is a leagcy software that was published in the early 2000\'s. With the new technologies we now ' +
-                    'have, a decision was made to create a new app from scratch with improved capabilities and fine user experience.' +
-                    'The purpose of redesigning this product was, mainly, to  , and so - increase the level of the system’s ability to help' +
-                    'the operational process. '
+                    'have, a decision was made to create a new app from scratch with improved capabilities and fine user experience. '
             }
         ]
     },
