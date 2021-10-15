@@ -134,9 +134,14 @@ const LOCAL_STORAGE_CURRENT_LINK = 'routes.currentLink';
 
 function App() {
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    const page = useRef(null);
     const [state, setState] = useState({currentLinkName: 'HOME', showNav: 'hide-nav'});
     const {currentLinkName, showNav} = state;
+
+
+    useEffect(() => {
+        const currentLinkNameFromStorage =  JSON.parse(localStorage.getItem(LOCAL_STORAGE_CURRENT_LINK) as string);
+        if(currentLinkNameFromStorage) setState({ currentLinkName: currentLinkNameFromStorage,  showNav: 'hide-nav' })
+    }, []);
 
     useEffect(() => {
         localStorage.setItem(LOCAL_STORAGE_CURRENT_LINK, JSON.stringify(currentLinkName))
