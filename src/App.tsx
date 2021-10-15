@@ -135,7 +135,7 @@ const LOCAL_STORAGE_CURRENT_LINK = 'routes.currentLink';
 function App() {
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const page = useRef(null);
-    const [state, setState] = useState({currentLinkName: '', showNav: 'hide-nav'});
+    const [state, setState] = useState({currentLinkName: 'HOME', showNav: 'hide-nav'});
     const {currentLinkName, showNav} = state;
 
     useEffect(() => {
@@ -150,6 +150,12 @@ function App() {
         if(!linkName || linkName === '') return;
         setState((prevState: any) => {
             return {...prevState, currentLinkName: linkName, showNav: 'hide-nav'}
+        });
+    }
+
+    function resetCurrentLink() {
+        setState((prevState: any) => {
+            return {...prevState, currentLinkName: ''}
         });
     }
 
@@ -182,7 +188,7 @@ function App() {
               <Router>
                   <Header selectedNavbarLink = {selectedNavbarLink} showHeaderNav= {showHeaderNav} showNav={showNav} scrollToBottom={scrollToBottom} currentLinkName={currentLinkName} basicLinks={BASIC_LINKS}/>
                   <div className="page-content">
-                      <Body projectsLinks={PROJECTS_LINKS} ProjectsComponents={ProjectsComponents}/>
+                      <Body projectsLinks={PROJECTS_LINKS} ProjectsComponents={ProjectsComponents} resetCurrentLink={resetCurrentLink}/>
                   </div>
 
 

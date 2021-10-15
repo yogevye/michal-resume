@@ -80,7 +80,7 @@ const section1 ={
         {
             text: ', and the other way around. While looking at a wider georaphic scope, more icons are shown, but only the name is revealed in a single glance, which makes the user’s job easier in maintaining wide status of the airspace.\n' +
                 '\n' +
-                'Lables are built as three different components, each component contains text fields and is revealed respectively to the zoom level the user is on at that time.'
+                'Labels are built as three different components, each component contains text fields and is revealed respectively to the zoom level the user is on at that time.'
         }
     ]
 };
@@ -133,7 +133,7 @@ const section3 ={
     title: '# 3 - Configuration: great minds sometimes need their own thing',
     p1: [
         {
-            text: 'Since all users and roles are not the same - the three I exampled ealier and many more, and since all of them have different level of expertise and comprehension of visual imformation, we decided to '
+            text: 'Since all users and roles are not the same - the three I exampled earlier and many more, and since all of them have different level of expertise and comprehension of visual information, we decided to '
         },
         {
             text: 'allow users to organize their map view for their own needs and convenience',
@@ -147,7 +147,7 @@ const section3 ={
             bold: true
         },
         {
-            text: '. I focused on making this flow usable and even fun, and so, I devided it into two steps:\n' +
+            text: '. I focused on making this flow usable and even fun, and so, I divided it into two steps:\n' +
                 '\n',
         },
         {
@@ -160,7 +160,7 @@ const section3 ={
             bold: true
         },
         {
-            text: ' from the pool. To move the data fields around, users drag and drop into the desired place, they can add, remove and switch locations. Each field that was places is colored for indication and connot be placed on the label again. Clicking the “Quick Actions” tab or on the component will show the action pool and will function the same in a drag and drop technique, '
+            text: ' from the pool. To move the data fields around, users drag and drop into the desired place, they can add, remove and switch locations. Each field that was places is colored for indication and cannot be placed on the label again. Clicking the “Quick Actions” tab or on the component will show the action pool and will function the same in a drag and drop technique, '
         }
     ],
     p2: [

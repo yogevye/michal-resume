@@ -6,21 +6,21 @@ const sectionHeader = 'Findings from\n' +
 const sections = [
     {
         index: '#1',
-        title: 'Many machanics are not pleased with their job',
-        description: 'Machanics are in mandatory army service and many of them feel resentful.\n' +
-            '“Tool room duty” is a shift they must complete every 2 weeks, and is concieved as boring.'
+        title: 'Many mechanics are not pleased with their job',
+        description: 'Mechanics are in mandatory army service and many of them feel resentful.\n' +
+            '“Tool room duty” is a shift they must complete every 2 weeks, and is conceived as boring.'
     },
     {
         index: '#2',
-        title: 'Machanics spend a lot of time learning how to use the system',
+        title: 'Mechanics spend a lot of time learning how to use the system',
         description: 'Negative emotions towards “Tool room duty” is primarily due to difficulties performing\n' +
             'fast actions in a stressful environment, because of the flat learning curve of the old system.'
     },
     {
         index: '#3',
-        title: 'Machanics know where each tool is located',
-        description: 'Although there are handreds of tools in the room, machanics are trained to fetch them\n' +
-            'as quick as possible and remember locations, names and even serial numbers.'
+        title: 'Mechanics know where each tool is located',
+        description: 'Although there are hundreds of tools in the room, mechanics are trained to fetch them\n' +
+            'as quickly as possible and remember locations, names and even serial numbers.'
     }
 ];
 

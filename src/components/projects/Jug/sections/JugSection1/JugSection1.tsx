@@ -7,7 +7,7 @@ const bullets = [
         {text: 'PO'},
         {text: 'Back-end team',},
         {text: 'Frond-end team'},
-        {text: 'UX\\UI designer (me)', bold:true}
+        {text: 'UX & UI designer (me)', bold:true}
 ];
 
 const JugSection1 = () => (

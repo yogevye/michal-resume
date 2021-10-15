@@ -15,7 +15,7 @@ const AirtoolTeam = () => (
           <li>Architect</li>
           <li>Software team leader</li>
           <li>7 developers</li>
-          <li>UX/UI designer (me)</li>
+          <li>UX & UI designer (me)</li>
       </ul>
   </div>
 );

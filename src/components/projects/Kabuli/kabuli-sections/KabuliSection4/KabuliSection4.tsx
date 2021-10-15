@@ -2,7 +2,7 @@ import React from 'react';
 import './KabuliSection4.css';
 import Paragraph from "../../../../utils/Pharagraph/Paragraph";
 import KabuliSection4Bubble from "./KabuliSection4Bubble/KabuliSection4Bubble";
-import image1 from "../../../../../images/projects/content/kabuli/section-4/kabuli-section-4-img-1.svg";
+import image1 from "../../../../../images/projects/content/kabuli/section-4/kabuli-section-4-img-1.png";
 import image2 from "../../../../../images/projects/content/kabuli/section-4/kabuli-section-4-img-2.svg";
 import image3 from "../../../../../images/projects/content/kabuli/section-4/kabuli-section-4-img-3.svg";
 
@@ -21,7 +21,7 @@ const paragraph2 = [
 
 const paragraph3 = [
     {
-        text:  'Before the final designs, I created a user flow, to make sure all screen navigations and options are fogured out and in \n' +
+        text:  'Before the final designs, I created a user flow, to make sure all screen navigations and options are figure out and in \n' +
             'a logical order.',
     }];
 
@@ -44,7 +44,7 @@ const bubbles = [
     },
     {
         index: '#5',
-        text: 'Watching all recorded reports in map view – users can see reports on the map to be updated and avoid double-reporting.'
+        text: 'Watching all recorded reports in map view – users can see reports on the map, to be updated and avoid double-reporting.'
     }
 ]
 
@@ -59,7 +59,7 @@ const KabuliSection4 = () => (
                 })}
             </div>
             <Paragraph paragraph={paragraph2}/>
-            <div className="flex-column align-items-center padding-divs-bottom-40 padding-bottom-40">
+            <div className="flex-column align-items-center padding-img-bottom-40 padding-bottom-40">
                 <img alt="51" className="img-phone-full-capacity" src={image1}/>
                 <img alt="52" className="img-phone-full-capacity" src={image2}/>
             </div>

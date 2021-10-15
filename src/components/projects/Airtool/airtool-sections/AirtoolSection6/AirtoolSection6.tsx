@@ -10,14 +10,14 @@ const sectionHeader = 'Ideation \n' +
 
 const text =[
     {
-        text: 'he main goal was to make an app that would '
+        text: 'The main goal was to make an app that would '
     },
     {
         text: 'feel natural',
         bold: true
     },
     {
-        text: ' to the machanics, as if they already know it from their \n' +
+        text: ' to the mechanics, as if they already know it from their \n' +
             'everyday lives, and hopefully make this “boring” duty into a positive experience.\n' +
             '\n' +
             'I started with two options. '
@@ -26,7 +26,7 @@ const text =[
 
 const options = [
     {
-        title: 'Option A - georaphic board design',
+        title: 'Option A - geographic board design',
         description: 'Focuses on the physical location of each tool on the tool room walls.\n' +
             'platform - web app',
         img: optionAImg

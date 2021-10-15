@@ -28,6 +28,7 @@
 .web-header-content{
     position: relative;
     top: -130px;
+    margin-bottom: -90px;
 }
 
 .header-web{

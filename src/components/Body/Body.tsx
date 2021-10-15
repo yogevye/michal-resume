@@ -7,7 +7,7 @@ import ProjectContainer from "../projects/ProjectContainer/ProjectContainer";
 
 
 // @ts-ignore
-const Body = ({projectsLinks, ProjectsComponents}) =>{
+const Body = ({projectsLinks, ProjectsComponents, resetCurrentLink}) =>{
     const location = useLocation();
 // Scroll to top if path changes
     useLayoutEffect(() => {
@@ -30,7 +30,7 @@ const Body = ({projectsLinks, ProjectsComponents}) =>{
                     <About />
                 </Route>
                 <Route path="/">
-                    <Home projectsLinks={projectsLinks}/>
+                    <Home projectsLinks={projectsLinks} resetCurrentLink={resetCurrentLink}/>
                 </Route>
             </Switch>
         </div>

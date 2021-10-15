@@ -26,11 +26,11 @@ const timelineP1 = [
         text: 'This is the most important feature is the app, the timeline in the central tool and is shown at all times. While designing, it was important to focus on making it ',
     },
     {
-        text: 'readable and useable',
+        text: 'readable and usable.',
         bold: true
     },
     {
-        text: 'Using the timeline is a way of passing through time and setting into a "new reality", and so, it was important to make sure ',
+        text: ' Using the timeline is a way of passing through time and setting into a "new reality", and so, it was important to make sure ',
     },
     {
         text: 'the timeline is indicative of the time you see',
@@ -113,7 +113,7 @@ const JugSection6 = () => (
             </div>
         </div>
         <div className="flex-column">
-            <h2>Time line</h2>
+            <h2>Timeline</h2>
             <Paragraph paragraph={timelineP1}/>
             <div className="flex-row justify-content-center img-padding">
                 <img alt="33" className="img-phone-full-capacity" src={img11}/>

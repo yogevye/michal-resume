@@ -6,7 +6,7 @@ import Paragraph from "../../../../utils/Pharagraph/Paragraph";
 
 const sectionHeader = 'Back to the field - ' +
     'usability testing';
-const description = 'After making wireframes for both options, I printed out screens on paper and went testing them with machanins \n' +
+const description = 'After making wireframes for both options, I printed out screens on paper and went testing them with mechanics \n' +
     'in two bases. I tested one user at a time by giving them tasks and watching them perform it on the “app”.\n' +
     'It was important to test at the hanger itself, since'
 const boldDescription = 'no office can reflect the conditions in which the work happens.';
@@ -20,8 +20,8 @@ const conclusionText = [
         bold: true
     },
     {
-        text: ' scanning and used the cart to edit their choises.\n' +
-            'The location of tools in the tool room was so well known, that swiping trough boards was irrelevant and\n' +
+        text: ' and used the cart to edit their choices.\n' +
+            'The location of tools in the tool room was so well known, that swiping through boards was irrelevant and\n' +
             'time consuming.\n' +
             '\n' +
             'From the usability testing results we decided to design and develop the app on '

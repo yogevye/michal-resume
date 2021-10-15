@@ -12,9 +12,9 @@ import Paragraph from "../../../../utils/Pharagraph/Paragraph";
 const sectionHeader = 'New features';
 const text = 'I brainstormed a couple of changes and additions that are simple, yet powerful, to simplify the current user flow \n' +
     'and allow for drastic improvements in user experience and process speed.';
-const dashboardText1 = 'When tools are all over the place, taken by multiple machanics and located at different areas of the hanger, Airtool’s\n' +
-    'user is incharge of keeping the mess as orgenized as possible. Being on “Tool room duty” means managing the tools\n' +
-    'and performing audits a few times a day, some schedualed and some surprises.  \n' +
+const dashboardText1 = 'When tools are all over the place, taken by multiple mechanics and located at different areas of the hanger, Airtool’s\n' +
+    'user is in charge of keeping the mess as organized as possible. Being on “Tool room duty” means managing the tools\n' +
+    'and performing audits a few times a day, some scheduled and some surprises.  \n' +
     'Therefore, I decided to provide a ';
 const dashboardText2 = 'dashboard with accessibility to all needed information';
 const dashboardText3 = ' - the app works for the user \n' +
@@ -37,7 +37,7 @@ const shoppingText = [
         bold: true
     },{
        text: ' and enables users to be aware of which items were taken and \n' +
-           'edit the list easily. One of the dangers in the former system was the reliance on users’ memmory in such a messy and\n' +
+           'edit the list easily. One of the dangers in the former system was the reliance on users’ memory in such a messy and' +
            'noisy environment, a mistake that is made in the app can cost in human life. To make tool management clearer, \n' +
            'I added a '
     },{
@@ -58,7 +58,7 @@ const ReturnByUserText = [
     {
         text: 'When returning tools to the storage, most times one person returns all the items that he/she signed for. In the \n' +
             'former system, returning process took a long time and didn’t consider the possibilities of using the data given \n' +
-            'earlier - who took which tools. This feature enables to filter the issued tools by machanics, and therefore ',
+            'earlier - who took which tools. This feature enables to filter the issued tools by mechanics, and therefore ',
     }, {
         text: 'shortening\n' +
             'the return process drastically',

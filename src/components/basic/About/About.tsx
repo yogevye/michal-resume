@@ -13,11 +13,11 @@ const paragraphs = [`
                 When joining the establishment of the UX team in the Israeli air Force,\n 
                 I self tought UX/UI design and had the pleasure of experimenting my\n
                 knowledge on real working apps, for real operational needs and for\n
-                real users. I proceeded to the role of UX team lead and was part of UX\n 
+                real users. I proceeded to the role of UX team lead and was part of design\n 
                 processes for countless projects.\n
 `,
 `
-                Currently I work on a project in the IAF as an External consultant and\n
+                Currently, I work on a project in the IAF as an External consultant and\n
                 specialize in designing simple solutions for comlplex systems.\n
 `,
 `

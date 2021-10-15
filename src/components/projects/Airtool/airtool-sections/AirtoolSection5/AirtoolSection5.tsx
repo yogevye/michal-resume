@@ -6,8 +6,8 @@ const sectionHeader:string = 'Challenges\n' +
 
 const bullets = [
     'Creating a positive experience for users who are forced to use the app.',
-    'Adding new features to speed up the main prosseses.',
-    'Eliminiating the need for app training.'
+    'Adding new features to speed up the main processes.',
+    'Eliminating the need for app training.'
 ];
 
 // @ts-ignore

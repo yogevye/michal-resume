@@ -23,7 +23,7 @@ const AirtoolUserEnvTitle = 'User & environment\n' +
 
 const AirtoolUserEnvDescription = [
     {
-        text: 'To get a wide knowledge of the machanics’ experience in their unfamiliar territory, I decided to conduct '
+        text: 'To get a wide knowledge of the mechanics’ experience in their unfamiliar territory, I decided to conduct '
     },
     {
         text: 'uncontrolled user observations',

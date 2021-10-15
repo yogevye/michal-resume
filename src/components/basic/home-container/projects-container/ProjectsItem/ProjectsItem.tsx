@@ -8,9 +8,9 @@ const viewCaseStudyMessage = 'View Case Study';
 
 
 // @ts-ignore
-const ProjectsItem = ({projectLink}) => (
+const ProjectsItem = ({projectLink, resetCurrentLink}) => (
     <Link to={projectLink.link} className="ProjectLink">
-        <div className="ProjectsItem">
+        <div className="ProjectsItem" onClick={resetCurrentLink}>
             {/*<div className="ProjectLogoContainer" style={{backgroundImage: 'url(' + projectLink.logo + ')'}}/>*/}
                 <img alt="10" className="project-log" src={projectLink.logo}/>
             <div className="CardContainer">

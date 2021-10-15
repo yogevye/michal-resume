@@ -4,11 +4,11 @@ import Intro from "../Intro/Intro";
 import ProjectsLinks from "../projects-container/ProjectsLinks/ProjectsLinks";
 
 // @ts-ignore
-const Home = ({projectsLinks}) => (
+const Home = ({projectsLinks, resetCurrentLink}) => (
     <div className="wrapHome">
         <div className="Home">
             <Intro/>
-            <ProjectsLinks projectsLinks={projectsLinks}/>
+            <ProjectsLinks projectsLinks={projectsLinks} resetCurrentLink={resetCurrentLink}/>
         </div>
     </div>
 );
