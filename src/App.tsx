@@ -1,4 +1,4 @@
-import React, {useEffect, useRef, useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import './App.css';
 import './main.css'
 import {
@@ -208,7 +208,7 @@ function App() {
                           <a href = "mailto: michal.d.amrami@gmail.com">michal.d.amrami@gmail.com</a>
                       </section>
                       <section className="font-40 font-weight-bold">
-                          <a href="https://www.linkedin.com/in/michal-amrami/"> <img alt="likedIn" src={linkedIn}/> </a>
+                          <a href="https://www.linkedin.com/in/michal-amrami/" target = "_blank" rel="noopener noreferrer"> <img alt="likedIn" src={linkedIn}/> </a>
                       </section>
                       <section className="footer_mail">
                           0547975122
